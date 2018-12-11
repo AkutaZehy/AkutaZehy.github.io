@@ -3,4 +3,9 @@
 
 ## 欢迎来到悪橘ざひ的小铺
 
-现在这里空荡荡的哒，咕咕咕
+---
+## 杂物堆
+
+> [**自己写的SCP**](http://scpsandboxcn.wikidot.com/scp-cn-431)
+ 
+> [**个人OTOMADS主页**](https://otomads.com/u/5bc9fc5e27eabc28fed4b139)
