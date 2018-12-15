@@ -15,3 +15,5 @@ E-mail:<akuta-zehy@outlook.com>
 
 
 https://typora.io/
+
+https://www.evernote.com/client/snv?noteGuid=d7ff0c99-6a68-48ac-ba92-554392b9732c&noteKey=58b43f170f4a881c47768bb3cb46c660&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs458%2Fsh%2Fd7ff0c99-6a68-48ac-ba92-554392b9732c%2F58b43f170f4a881c47768bb3cb46c660&title=4.7.9%25E7%2589%2588%25E6%259C%25AC%25E6%259B%25B4%25E6%2596%25B0
