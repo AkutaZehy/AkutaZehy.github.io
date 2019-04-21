@@ -7,7 +7,7 @@
 
 
 body {
-	text-align: center;
+	text-align: left;
 	background-color: #ebebeb;
 	padding: 0 1em;
 	font-family: 'IBM Plex Sans', 
@@ -24,7 +24,7 @@ body {
 	margin: 0 auto;
 	}
 .indx {
-	text-align: center;
+	text-align: left;
 	padding: 0 2em;
 	}
 .artc {
@@ -44,26 +44,32 @@ body {
 h1 {
 	/*text-align: center;*/
 	color: #101010;
-	font-size: 1.625rem;
+	font-size: 2.25rem;
 	margin-bottom: 8px;
 	margin-top: 8px;
 	font-weight: 700;
 	}
 h2 {
 	color: #101010;
-	font-size: 1.375rem;
+	font-size: 1.75rem;
 	margin-bottom: 1rem;
 	font-weight: 700;
 	}
 h3 {
 	color: #101010;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	margin-bottom: 1rem;
 	font-weight: 400;
 	}
+h4 {
+    color: #101010;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
 p {
 	color: #404040;
-	font-size: 1.125rem;
+	font-size: 1rem;
 	line-height: 1.75rem;
 	margin-bottom: .875rem;
 }
@@ -81,14 +87,14 @@ p {
 	margin: 1.5rem 0;
 	}
 .sml {
-	text-align: center;
+	text-align: left;
 	color: #808080;
 	font-size: .875rem;
 	line-height: 1.25rem;
 	margin-bottom: .875rem;
 	}
 .aud {
-	text-align: center;
+	text-align: left;
 	}
 .cmt {
 	color: #808080;
@@ -110,7 +116,7 @@ img {
 	margin: 0 auto 1.125em;
 	display: block;
 	box-shadow: 0 .25em 2em #d8d8d8;
-	text-align: center;
+	text-align: left;
 	}
 hr {
 	border-top-color: #d8d8d8;
