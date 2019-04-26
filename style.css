@@ -1,4 +1,4 @@
-* {
+*{
 	margin: 0; 
 	padding: 0;
 	border: 0;
@@ -139,6 +139,14 @@ hr {
 
 	img {width:100%;}
 
+}
+    .photo{
+    float:left;
+    width:20%;
+}
+    .intro{
+    float:right;
+    width:80%;
 }
 
 
