@@ -40,6 +40,11 @@ body {
 	background-color: #d8d8d8;
 	padding: 1em 2em;
 }
+.dhb {
+    border-style: dashed;
+    color: #9999FF;
+    padding: 1em 2em;
+}
 
 h1 {
 	/*text-align: center;*/
