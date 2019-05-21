@@ -41,8 +41,9 @@ body {
 	padding: 1em 2em;
 }
 .frm {
-    border:#183038 solid 2px;
+    /*border:#183038 solid 2px;*/
     padding: 1em 2em;
+    background-color:#686868;
 }
 
 h1 {
