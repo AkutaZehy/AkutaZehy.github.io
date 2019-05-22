@@ -121,7 +121,8 @@ img {
 	margin: 0 auto 1.125em;
 	display: inline-flex;
 	box-shadow: 0 .25em 2em #d8d8d8;
-	text-align: left;
+	text-align: center;
+	height:auto;
 	}
 hr {
 	border-top-color: #d8d8d8;
