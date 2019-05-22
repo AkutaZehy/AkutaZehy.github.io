@@ -7,6 +7,17 @@
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,400i,700,700i|Noto+Serif+SC:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../../style.css">
   <title>Setting | 设定集</title>
+  
+  <script type="text/javascript">
+      var flag = 0
+      function changeSize(num)
+      {
+          flag++;
+          if(flag % 2 == 1){
+              document.getElementById(num).height *=2
+          }else{document.getElementById(num).height/=2}
+      }
+  </script>
 </head>
 
 <body>
@@ -24,7 +35,7 @@
     <br />
     <div class="frm">
       <h3>私(わたし) | 我</h3>
-      <img src="Gallery/Watashi.gif" width="25%" style="inline-block" /><br />
+      <img id=1 onclick="changeSize('1')" src="Gallery/Watashi.gif" width="25%" style="inline-block" /><br />
       <p>The ME.<br /> The ME is actually a symbol of the spiritual carrier of mine.Also,it carries all the feelings and thoughts of mine,as is mentioned in the poem. <br />What she had experienced just see The Origin.</p>
     </div><br />
     <div class="frm">
