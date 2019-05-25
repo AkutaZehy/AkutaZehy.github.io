@@ -7,6 +7,32 @@
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,400i,700,700i|Noto+Serif+SC:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../../style.css">
   <title>Limo's Scattered Lines | 璃茉的散集</title>
+  <script src="../../jquery.js">
+  </script><script type="text/javascript"> 
+$(document).ready(function(){
+$(".flip").click(function(){
+    $(".panel").slideToggle("slow");
+  });
+});
+</script>
+ 
+<style type="text/css"> 
+div.panel,h2.flip
+{
+margin:4px auto;
+padding:2px;
+text-align:left;
+background:#f8f8e8;
+border:solid #000000 1px
+}
+div.panel
+{
+height:16em;
+display:none;
+}
+</style>
+</style>
+</script>
 </head>
 
 <body>
@@ -19,13 +45,15 @@
     <p class="intb">Note:You can also call this 'an essay'.It's written in many different languages including one that I created.I just try my best to provide exact translations.</p>
     <p class="intb">Warning:this essay includes many strange opinions about 'world view' because when I wrote it I was in a real panic and also depressed.Please don't take them seriously.</p>
     <br />
-    <h2>选择章节</h2>
+    <h2 class="flip">选择章节</h2>
+    <div class="panel">
     <p><a href="Zero.html">启序</a></p>
     <p><a href="First.html">第一語 最初の語 怨魂のメモ</a></p>
     <p><a href="Second.html">第二語 接続の語 風の狩り</a></p>
     <p><a href="Third.html">第三語 思考の語 罪の质问</a></p>
     <p><a href="Fourth.html">第四語 虚無の語 心の责难</a></p>
     <p><a href="End.html">結語</a></p>
+      </div>
   </div>
 </body>
 
