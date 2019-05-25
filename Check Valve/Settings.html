@@ -8,20 +8,20 @@
   <link rel="stylesheet" type="text/css" href="../../style.css">
   <title>Setting | 设定集</title>
   
-  <script type="text/javascript">
-      var flag = 0
-      function changeSize(num)
-      {
-          flag++;
-          if(flag % 2 == 1){
-              document.getElementById(num).height = '100%';
-              document.getElementById(num).width = '100%';
-          }else{
-              document.getElementById(num).height = '25%';
-              document.getElementById(num).width = '25%';
-          }
-      }
-  </script>
+  <script src="../../jquery.js">
+<script> 
+var flag=0;
+$(document).ready(function(){
+  $("img").click(function(){
+    var img=$("img");
+    flag++;
+    if(flag%2==0){
+    img.animate({height:'100%',width:'100%',opacity:'0.8'},"slow");
+    }else{
+    img.animate({height:'25%',width:'25%',opacity:'1'},"slow");}
+  });
+});
+</script> 
 </head>
 
 <body>
