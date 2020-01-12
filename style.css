@@ -72,18 +72,6 @@ h4 {
     margin-bottom: 1rem;
     font-weight: normal;
 }
-pit {
-	color: #f0848f;
-	font-size: 1rem;
-	margin-bottom: .875rem;
-	font-weight: normal;
-	}
-aka {
-	color: #7eb9ed;
-	font-size: 1rem;
-	margin-bottom: .875rem;
-	font-weight: normal;
-	}
 p {
 	color: #404040;
 	font-size: 1rem;
@@ -118,6 +106,18 @@ p {
 	font-size: .875rem;
 	/*float: right;*/
 }
+.pit {
+	color: #f0848f;
+	font-size: 1rem;
+	margin-bottom: .875rem;
+	font-weight: normal;
+	}
+.aka {
+	color: #7eb9ed;
+	font-size: 1rem;
+	margin-bottom: .875rem;
+	font-weight: normal;
+	}
 
 a:link, a:visited {
 	color: #404040;
