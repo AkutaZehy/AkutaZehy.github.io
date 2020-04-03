@@ -4,13 +4,19 @@
 	border: 0;
 }
 
+@font-face{
+     font-family: 'Lato'; 
+     src:url('../Lato-Regular.ttf');
+}
+
 
 
 body {
 	text-align: left;
 	background-color: #ebebeb;
 	padding: 0 1em;
-	font-family: 'IBM Plex Sans', 
+	font-family: 'Lato',
+                     'IBM Plex Sans', 
 				 'PingFang SC', 
 				 'Hiragino Sans GB', 
 				 'Sarasa Gothic SC' , 
