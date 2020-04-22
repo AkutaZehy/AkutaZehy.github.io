@@ -62,17 +62,29 @@ h1 {
 	}
 h2 {
 	color: #101010;
-	font-size: 1.75rem;
+	font-size: 2.0rem;
 	margin-bottom: 1rem;
 	font-weight: normal;
 	}
 h3 {
 	color: #101010;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	margin-bottom: 1rem;
 	font-weight: normal;
 	}
 h4 {
+    color: #101010;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+h5 {
+    color: #101010;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+h6 {
     color: #101010;
     font-size: 1.25rem;
     margin-bottom: 1rem;
