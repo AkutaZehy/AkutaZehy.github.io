@@ -5,8 +5,9 @@
 }
 
 @font-face{
-     font-family: 'Lato'; 
-     src:url('Lato-Regular.ttf');
+     font-family: 'Mincho'; 
+     src:url('FOT-TsukuMinPro-L-1.otf');     
+     /*src:url('Lato-Regular.ttf');*/
 }
 
 
@@ -15,14 +16,14 @@ body {
 	text-align: left;
 	background-color: #ebebeb;
 	padding: 0 1em;
-	font-family: 'Lato',
-                     'IBM Plex Sans', 
-				 'PingFang SC', 
-				 'Hiragino Sans GB', 
-				 'Sarasa Gothic SC' , 
-				 'Microsoft Yahei UI', 
-				 'Microsoft Yahei', 
-				 sans-serif;
+	font-family: 'Mincho',
+                'IBM Plex Sans', 
+		 'PingFang SC', 
+		 'Hiragino Sans GB', 
+		 'Sarasa Gothic SC' , 
+		 'Microsoft Yahei UI', 
+                 'Microsoft Yahei', 
+		sans-serif;
 	}
 #page {
 	text-align: left;
