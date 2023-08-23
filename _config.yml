@@ -622,12 +622,12 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 <!-- https://cdn.jsdelivr.net/npm/sakana-widget@2.5.0/lib/sakana.min.js -->
                 <!-- https://cdnjs.cloudflare.com/ajax/libs/sakana-widget/2.5.0/sakana.min.css -->
                 <!-- https://cdnjs.cloudflare.com/ajax/libs/sakana-widget/2.5.0/sakana.min.js -->
-
+              
                 <link
                   rel="stylesheet"
                   href="https://cdn.jsdelivr.net/npm/sakana-widget@2.5.0/lib/sakana.min.css"
                 />
-                <div id="sakana-widget"></div>
+                <div id="sakana-widget" position="fixed" bottom="0" left="0"></div>
                 <script>
                   function initSakanaWidget() {
                     new SakanaWidget().mount('#sakana-widget');
