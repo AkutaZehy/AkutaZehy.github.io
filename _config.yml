@@ -627,7 +627,11 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                   rel="stylesheet"
                   href="https://cdn.jsdelivr.net/npm/sakana-widget@2.5.0/lib/sakana.min.css"
                 />
-                <div id="sakana-widget" position="fixed" bottom="0" left="0"></div>
+                <div id="sakana-widget" style="
+                    position:fixed;
+                    left:50px;
+                    bottom:100px
+                    "></div>
                 <script>
                   function initSakanaWidget() {
                     new SakanaWidget().mount('#sakana-widget');
