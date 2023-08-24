@@ -6,8 +6,11 @@
 ## Contact
 
 - Address
-  - **Wuhan, Hubei, China**
+  - **Wuhan, Hubei, China**, Usual Address
   - ***Gods appear and devils vanish***
+
+- E-mail
+  - **[akuta_zehy[at]outlook.com](mailto:akuta_zehy@outlook.com)**
 
 <!--
 - Phone
@@ -37,17 +40,27 @@
 
 <!-- .slide vertical=true -->
 
+## Coding
 - **MySQL**
 - **HTML 5**
 - **Java**
-- **Spring**
+- **Spring**, Learning
 - **Python**
-- **Adobe After Effects**
+- **Shell**
+- **Git**
+- **VSCode**
+- **Markdown**
+- **$\LaTeX$**
 
 <!-- .slide -->
 
-- **Markdown**, Familiar
-- **$\LaTeX$**, Familiar
-- **Shell**, Learning
-- **Git**, Learning
-- **VSCode**, Learning
+## Video & Sound Editing
+- **Adobe After Effects**
+- **Adobe Premiere Pro**
+- **Aviutl**
+- **Krita**
+- **SAI 2**
+- **FL Studio**
+- **Blender**, Learning
+
+
