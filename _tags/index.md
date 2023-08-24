@@ -3,10 +3,8 @@ title: 标签页
 date: 2023-08-24
 type: "tags" # 设置页面类型
 comments: false
-permalink: /tags/
+permalink: /tags
 ---
-
-# 标签列表
 
 {% for tag in site.tags %}
     {% assign count = tag | last | size %}
