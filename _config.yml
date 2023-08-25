@@ -654,7 +654,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             prepend: <i class="fa-solid fa-clock fa-fw"></i>
             unit: 分
             divided_by: 300 # 正常人的阅读速度大概每分钟三百个字
-          category: # 显示文章类别
+          tags: # 显示文章标签
             enable: true
             prepend: <i class="fa-solid fa-tags fa-fw"></i>
 

@@ -1,5 +1,5 @@
 ---
 layout: categories
 title: Collection
-category: collection
+tags: collection
 ---
