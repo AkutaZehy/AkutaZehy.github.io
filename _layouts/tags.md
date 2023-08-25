@@ -3,9 +3,7 @@ layout: page
 ---
 
 {% for post in site.tags[page.tags] %}
-<a href="{{ post.url | absolute_url }}">
-  {{ post.title }}
-</a>
+- *{{ post.date | date_to_string }}* [{{ post.title }}]({{ post.url | relative_url }})
 <br>
 {% endfor %}
 
