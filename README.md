@@ -69,9 +69,9 @@
 
 <!-- .slide vertical=true-->
 
-- lachrymaL·[lachrymal.net](lachrymal.net)
-- megakite·[megakite.icu](megakite.icu)
-- 活大师·[aliv.life](aliv.life)
-- 艾了个拉·[aira.cafe](aira.cafe)
+- lachrymaL·[lachrymal.net](https://lachrymal.net)
+- megakite·[megakite.icu](https://megakite.icu)
+- 活大师·[aliv.life](https://aliv.life/)
+- 艾了个拉·[aira.cafe](https://aira.cafe)
 
 
