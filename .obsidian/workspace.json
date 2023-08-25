@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2022-03-17-无题.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2022-03-17-无题.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2022-03-17-无题.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2022-03-17-无题.md"
+                "file": "README.md"
               }
             }
           }
@@ -138,16 +138,17 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
     }
   },
   "active": "e1db7ff4e4e4c449",
   "lastOpenFiles": [
+    "_posts/2022-03-17-无题.md",
     "_posts/1970-01-01-comments.md",
     "_posts/1970-01-01-tags.md",
     "_posts/1970-01-01-archive.md",
@@ -159,7 +160,6 @@
     "_posts/2023-08-23-添加Sakana小组件.md",
     "_posts/2023-08-24-血压升高的三两事01.md",
     "_posts/2023-08-21-test_02.md",
-    "_posts/2022-03-17-无题.md",
     "_posts/2023-08-21-test.md",
     "_posts/2023-08-25-血压升高的三两事02 2.md",
     "_posts/2023-08-25-血压升高的三两事02 1.md",

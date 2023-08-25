@@ -63,4 +63,15 @@
 - **FL Studio**
 - **Blender**, Learning
 
+<!-- .slide -->
+
+## 友站
+
+<!-- .slide vertical=true-->
+
+- lachrymaL·[lachrymal.net](lachrymal.net)
+- megakite·[megakite.icu](megakite.icu)
+- 活大师·[aliv.life](aliv.life)
+- 艾了个拉·[aira.cafe](aira.cafe)
+
 
