@@ -1,5 +1,5 @@
 ---
-layout: categories
+layout: tags
 title: Blog
-category: blog
+tags: blog
 ---

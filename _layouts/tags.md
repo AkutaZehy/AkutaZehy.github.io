@@ -8,3 +8,5 @@ layout: page
 </a>
 <br>
 {% endfor %}
+
+{{content}}
