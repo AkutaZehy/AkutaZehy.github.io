@@ -54,7 +54,7 @@
 
 <!-- .slide -->
 
-## Video & Sound Editing
+### Video & Sound Editing
 - **Adobe After Effects**
 - **Adobe Premiere Pro**
 - **Aviutl**
