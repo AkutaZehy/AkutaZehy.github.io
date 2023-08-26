@@ -11,7 +11,6 @@ layout: page
 
 {% endfor %}
 </ul>
-
 <br />
 
 {{content}}

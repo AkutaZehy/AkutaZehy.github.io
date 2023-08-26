@@ -40,7 +40,7 @@
 
 <!-- .slide vertical=true -->
 
-## Coding
+### Coding
 - **MySQL**
 - **HTML 5**
 - **Java**
@@ -65,13 +65,20 @@
 
 <!-- .slide -->
 
-## 友站
+## Related Sites
 
 <!-- .slide vertical=true-->
 
+### Friends' Sites
 - lachrymaL·[lachrymal.net](https://lachrymal.net)
 - megakite·[megakite.icu](https://megakite.icu)
 - 活大师·[aliv.life](https://aliv.life/)
 - 艾了个拉·[aira.cafe](https://aira.cafe)
 
+<!--.slide-->
+
+### My Subsites
+
+- Archived Old Site·[恶橘遥的小铺（已封存）](https://akutazehy.github.io/pastry-store.github.io/)
+- Wordpress 分站·[WordPress 博文](https://akutazehy.home.blog/)
 
