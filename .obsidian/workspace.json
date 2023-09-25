@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/1970-01-01-archive.md",
+                "file": "_starfall/世界的良性与劣性.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/1970-01-01-archive.md",
+                "file": "_starfall/世界的良性与劣性.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/1970-01-01-archive.md",
+                "file": "_starfall/世界的良性与劣性.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/1970-01-01-archive.md"
+                "file": "_starfall/世界的良性与劣性.md"
               }
             }
           },
@@ -158,6 +158,7 @@
   },
   "active": "d73a1c8b5f383cf1",
   "lastOpenFiles": [
+    "_posts/1970-01-01-archive.md",
     "_posts/1970-01-01-comments.md",
     "_posts/1970-01-01-tags.md",
     "_posts/2023-08-24-星落集.md",
@@ -176,7 +177,6 @@
     "_posts/2023-08-21-test_02.md",
     "_posts/2023-08-21-test.md",
     "_posts/2023-08-23-添加Sakana小组件.md",
-    "_posts/1970-01-01-archive.md",
     "tags/article.md",
     "tags/blog.md",
     "tags/test.md",
