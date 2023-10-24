@@ -1,13 +1,12 @@
-# 首页
+## 首页
 欢迎光临，下面给你介绍一下我吧/w\\~
 
 <!-- .slide vertical=true -->
 
-## Contact
+## 联系 | Contact
 
-- Address
-  - **Wuhan, Hubei, China**, Usual Address
-  - ***Gods appear and devils vanish***
+- 地址 | Address
+  - **中国，湖北，武汉**
 
 - E-mail
   - **[akuta_zehy[at]outlook.com](mailto:akuta_zehy@outlook.com)**
@@ -24,23 +23,23 @@
 
 <!-- .slide vertical=true -->
 
-## Projects
+## 工程 | Projects
 
 - It's still empty here.
 
 <!-- .slide vertical=true -->
 
-## Experience
+## 经历 | Experience
 
 - It's still empty here.
 
 <!-- .slide vertical=true -->
 
-## Toolchains
+## 会用的工具 | Toolchains
 
 <!-- .slide vertical=true -->
 
-### Coding
+### 编程 | Coding
 - **MySQL**
 - **HTML 5**
 - **Java**
@@ -54,7 +53,7 @@
 
 <!-- .slide -->
 
-### Video & Sound Editing
+### 音声与视觉 | Video & Sound Editing
 - **Adobe After Effects**
 - **Adobe Premiere Pro**
 - **Aviutl**
@@ -62,10 +61,11 @@
 - **SAI 2**
 - **FL Studio**
 - **Blender**, Learning
+- ~~OpenToonz~~, Not Using Anymore
 
 <!-- .slide -->
 
-## Related Sites
+## 友站 | Related Sites
 
 <!-- .slide vertical=true-->
 
@@ -77,8 +77,8 @@
 
 <!--.slide-->
 
-### My Subsites
+### 个人子站点 | My Subsites
 
-- Archived Old Site·[恶橘遥的小铺（已封存）](https://akutazehy.github.io/pastry-store.github.io/)
-- Wordpress 分站·[WordPress 博文](https://akutazehy.home.blog/)
+- 博客园·[AkutaZehy - 博客园 (cnblogs.com)](https://www.cnblogs.com/akuta-zehy/)
+- Wordpress 分站（更新较少）·[WordPress 博文](https://akutazehy.home.blog/)
 
