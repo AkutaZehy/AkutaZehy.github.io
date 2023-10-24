@@ -75,7 +75,7 @@
 - 活大师·[aliv.life](https://aliv.life/)
 - 艾了个拉·[aira.cafe](https://aira.cafe)
 
-<!--.slide-->
+<!-- .slide vertical=true-->
 
 ### 个人子站点 | My Subsites
 

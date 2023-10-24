@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_archived/人间的至暗面其十六.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": true
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_starfall/关于星落的故事.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_starfall/关于星落的故事.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_starfall/关于星落的故事.md"
+                "file": "README.md"
               }
             }
           },
@@ -169,16 +168,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8597ce3760e67086",
+  "active": "5560db6c5b193eaa",
   "lastOpenFiles": [
+    "_archived/人间的至暗面其十六.md",
+    "_starfall/关于星落的故事.md",
     "_posts/2023-09-25-接着玩Liquid表达式.md",
     "_posts/2023-08-25-血压升高的三两事02.md",
     "_posts/2023-08-23-添加Sakana小组件.md",
     "_posts/2023-08-24-星落集.md",
-    "_archived/人间的至暗面其十六.md",
     "_archived/info.md",
     "_akikaze/IF：世界依旧运转.md",
-    "_starfall/关于星落的故事.md",
     "_starfall/世界的良性与劣性.md",
     "_starfall/在这奇怪的世界.md",
     "tags/collection.md",
