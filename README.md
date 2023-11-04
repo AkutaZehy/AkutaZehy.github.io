@@ -23,13 +23,7 @@
 
 <!-- .slide vertical=true -->
 
-## 工程 | Projects
-
-- It's still empty here.
-
-<!-- .slide vertical=true -->
-
-## 经历 | Experience
+## 工程 & 经历 | Projects & Experience
 
 - It's still empty here.
 
@@ -50,8 +44,6 @@
 - **VSCode**
 - **Markdown**
 - **$\LaTeX$**
-
-<!-- .slide -->
 
 ### 音声与视觉 | Video & Sound Editing
 - **Adobe After Effects**
