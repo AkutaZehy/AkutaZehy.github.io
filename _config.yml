@@ -343,6 +343,8 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 img {
                   display: inline-block;
                   margin: 0;
+                  width: 60%;
+                  padding-left: 20%;
                 }
               </style>
             - | # 自定义滚动条，仅对Chrome系浏览器生效

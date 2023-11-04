@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-11-04-语言的习性.md",
+                "file": "_posts/2023-11-02-好久不见，万圣快乐.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-11-04-语言的习性.md",
+                "file": "_posts/2023-11-02-好久不见，万圣快乐.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-11-04-语言的习性.md",
+                "file": "_posts/2023-11-02-好久不见，万圣快乐.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-11-04-语言的习性.md"
+                "file": "_posts/2023-11-02-好久不见，万圣快乐.md"
               }
             }
           },
@@ -158,15 +158,16 @@
   },
   "active": "5560db6c5b193eaa",
   "lastOpenFiles": [
-    "_posts/2023-11-02-好久不见，万圣快乐.md",
     "_posts/2023-11-04-语言的习性.md",
+    "README.md",
+    "tags/test.md",
+    "_posts/2023-11-02-好久不见，万圣快乐.md",
     "_starfall/关于星落的故事.md",
     "assests/images/i-just-wanna-goin-out.png",
     "assests/images/QQ图片20231101183057.png",
     "assests/images/shark-guangzhounihao.jpg",
     "assests/images/QQ图片20231101183057.jpg",
     "_posts/2023-09-25-接着玩Liquid表达式.md",
-    "README.md",
     "_archived/人间的至暗面其十六.md",
     "_posts/2023-08-25-血压升高的三两事02.md",
     "_posts/2023-08-23-添加Sakana小组件.md",
@@ -177,7 +178,6 @@
     "_starfall/在这奇怪的世界.md",
     "tags/collection.md",
     "tags/novel.md",
-    "tags/test.md",
     "Pasted image 20230919013310.png",
     "_archived/2023-10-02-秋风集.md",
     "_posts/2023-08-24-血压升高的三两事01.md",
