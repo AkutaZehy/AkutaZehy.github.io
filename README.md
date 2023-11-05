@@ -5,21 +5,23 @@
 
 ## 联系
 
-- 地址
+- 当前地址
   - **中国，湖北，武汉**
 
 - E-mail
-  - **[akuta_zehy[at]outlook.com](mailto:akuta_zehy@outlook.com)**
+  - **[akuta_zehy@outlook.com](mailto:akuta_zehy@outlook.com)**
 
 <!-- .slide vertical=true -->
 
 ## 工程 & 经历
 
-- It's still empty here.
+- [3D打印功能级配混凝土的热学和力学性能：SAC对3DPC流变和相变的作用 | 三作 Orz](https://www.sciencedirect.com/science/article/pii/S0950061823035481)
 
 <!-- .slide vertical=true -->
 
 ## 会用的工具
+
+<!-- .slide vertical=true -->
 
 ### 编程
 - MySQL
@@ -35,7 +37,7 @@
 
 <!-- .slide vertical=true -->
 
-### 音声&视觉
+### 音声 & 视觉
 - Adobe After Effects
 - Adobe Premiere Pro
 - Aviutl
@@ -48,6 +50,8 @@
 <!-- .slide vertical=true -->
 
 ## 其他链接
+
+<!-- .slide vertical=true -->
 
 ### 友站
 - [lachrymaL](https://lachrymal.net)
