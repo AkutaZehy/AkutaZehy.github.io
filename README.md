@@ -15,7 +15,9 @@
 
 ## 工程 & 经历
 
-- [3D打印功能级配混凝土的热学和力学性能：SAC对3DPC流变和相变的作用 / 三作 Orz](https://www.sciencedirect.com/science/article/pii/S0950061823035481)
+|标题|是什么|链接|
+|:---:|:---:|:---:|
+|3D打印功能级配混凝土的热学和力学性能：<br>SAC对3DPC流变和相变的作用|CBM 三作|[EI链接](https://www.sciencedirect.com/science/article/pii/S0950061823035481)|
 
 <!-- .slide vertical=true -->
 
