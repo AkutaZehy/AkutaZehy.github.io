@@ -3,24 +3,25 @@
 
 <!-- .slide vertical=true -->
 
-## 联系 | Contact
+## 联系
 
-- 地址 | Address
+- 地址
   - **中国，湖北，武汉**
 
 - E-mail
   - **[akuta_zehy[at]outlook.com](mailto:akuta_zehy@outlook.com)**
 
-## 工程 & 经历 
-## Projects & Experience
+<!-- .slide vertical=true -->
+
+## 工程 & 经历
 
 - It's still empty here.
 
 <!-- .slide vertical=true -->
 
-## 会用的工具 | Toolchains
+## 会用的工具
 
-### 编程 | Coding
+### 编程
 - MySQL
 - HTML 5
 - Java
@@ -31,10 +32,10 @@
 - VSCode
 - Markdown
 - $\LaTeX$
-- 
+
 <!-- .slide vertical=true -->
 
-### 音声与视觉 | Video & Sound Editing
+### 音声&视觉
 - Adobe After Effects
 - Adobe Premiere Pro
 - Aviutl
@@ -46,17 +47,17 @@
 
 <!-- .slide vertical=true -->
 
-## 友站 | Related Sites
+## 其他链接
 
-### Friends' Sites
+### 友站
 - [lachrymaL](https://lachrymal.net)
 - [megakite](https://megakite.icu)
 - [活大师](https://aliv.life/)
 - [艾了个拉](https://aira.cafe)
 
-<!-- .slide vertical=true-->
+<!-- .slide vertical=true -->
 
-### 个人子站点 | My Subsites
+### 个人子站
 
 - [AkutaZehy - 博客园 (cnblogs.com)](https://www.cnblogs.com/akuta-zehy/)
 - [WordPress 博文](https://akutazehy.home.blog/)
