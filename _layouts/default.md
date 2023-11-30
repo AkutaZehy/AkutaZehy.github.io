@@ -15,6 +15,7 @@
   {% for node in page.jekyll-theme-WuK.default.append_to_head %}
   {{ node }}
   {% endfor %}
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
 </head>
 
 <body
