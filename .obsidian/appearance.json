@@ -3,5 +3,6 @@
   "theme": "system",
   "cssTheme": "Minimal",
   "baseFontSize": 21,
-  "textFontFamily": "cjkFonts 全瀨體"
+  "textFontFamily": "思源黑体 CN,cjkFonts 全瀨體",
+  "interfaceFontFamily": "思源黑体 CN"
 }
