@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "_posts/1970-01-01-archive.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "_posts/1970-01-01-archive.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "_posts/1970-01-01-archive.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "_posts/1970-01-01-archive.md"
               }
             }
           },
@@ -158,32 +158,32 @@
   },
   "active": "ed56f886f901b021",
   "lastOpenFiles": [
+    "_starfall/关于星落的故事.md",
+    "_posts/2023-08-21-test_02.md",
+    "_layouts/tags.md",
+    "_posts/1970-01-01-archive.md",
+    "_posts/1970-01-01-tags.md",
+    "_layouts/page.md",
+    "_posts/2023-08-21-test.md",
+    "tags/blog.md",
+    "tags/test.md",
+    "tags/collection.md",
+    "tags/article.md",
+    "tags/novel.md",
+    "_posts/2023-08-23-添加Sakana小组件.md",
+    "README.md",
     "_layouts/compress.md",
     "_layouts/post.md",
     "_layouts/redirect.md",
     "_layouts/default.md",
-    "_posts/1970-01-01-archive.md",
-    "_posts/1970-01-01-tags.md",
     "_posts/2022-03-17-无题.md",
     "_posts/1970-01-01-comments.md",
     "_posts/2023-08-24-血压升高的三两事01.md",
     "_starfall/大学社恐生存漫谈.md",
     "_posts/2023-09-25-秋风集.md",
-    "_starfall/关于星落的故事.md",
     "_archived/人间的至暗面其十六.md",
     "_archived/info.md",
     "_posts/2023-09-25-接着玩Liquid表达式.md",
-    "_posts/2023-08-25-血压升高的三两事02.md",
-    "_posts/1970-01-01-404.md",
-    "_posts/2023-08-24-星落集.md",
-    "_posts/2023-08-23-添加Sakana小组件.md",
-    "_posts/2023-08-21-test.md",
-    "_posts/2023-08-21-test_02.md",
-    "_starfall/在2023年的漫谈创作.md",
-    "_qiufeng/在这奇怪的世界.md",
-    "_qiufeng/世界的良性与劣性.md",
-    "_posts/2023-11-04-语言的习性.md",
-    "_posts/2023-11-02-好久不见，万圣快乐.md",
     "assests/images/liar-dancer.png",
     "assests/images/message.jpg",
     "assests/images/aliv.png",
