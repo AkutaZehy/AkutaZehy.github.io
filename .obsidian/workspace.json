@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/1970-01-01-archive.md",
+                "file": "_posts/2023-09-25-秋风集.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/1970-01-01-archive.md",
+                "file": "_posts/2023-09-25-秋风集.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/1970-01-01-archive.md",
+                "file": "_posts/2023-09-25-秋风集.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/1970-01-01-archive.md"
+                "file": "_posts/2023-09-25-秋风集.md"
               }
             }
           },
@@ -158,10 +158,15 @@
   },
   "active": "ed56f886f901b021",
   "lastOpenFiles": [
+    "_posts/2023-08-24-星落集.md",
+    "_posts/2023-09-25-秋风集.md",
+    "_starfall/大学社恐生存漫谈.md",
+    "_autumn/在这奇怪的世界.md",
+    "_autumn/世界的良性与劣性.md",
+    "_posts/1970-01-01-archive.md",
     "_starfall/关于星落的故事.md",
     "_posts/2023-08-21-test_02.md",
     "_layouts/tags.md",
-    "_posts/1970-01-01-archive.md",
     "_posts/1970-01-01-tags.md",
     "_layouts/page.md",
     "_posts/2023-08-21-test.md",
@@ -179,11 +184,6 @@
     "_posts/2022-03-17-无题.md",
     "_posts/1970-01-01-comments.md",
     "_posts/2023-08-24-血压升高的三两事01.md",
-    "_starfall/大学社恐生存漫谈.md",
-    "_posts/2023-09-25-秋风集.md",
-    "_archived/人间的至暗面其十六.md",
-    "_archived/info.md",
-    "_posts/2023-09-25-接着玩Liquid表达式.md",
     "assests/images/liar-dancer.png",
     "assests/images/message.jpg",
     "assests/images/aliv.png",
@@ -194,7 +194,7 @@
     "assests/images/QQ图片20231101183057.jpg",
     "Pasted image 20230919013310.png",
     "_archived",
-    "_qiufeng",
+    "_autumn",
     "assests/images/zeka.jpg",
     "tags"
   ]
