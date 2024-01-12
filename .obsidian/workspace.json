@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-01-01-项目经历.md",
+                "file": "_posts/1970-01-01-项目经历.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2023-01-01-项目经历.md",
+                "file": "_posts/1970-01-01-项目经历.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2023-01-01-项目经历.md",
+                "file": "_posts/1970-01-01-项目经历.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2023-01-01-项目经历.md"
+                "file": "_posts/1970-01-01-项目经历.md"
               }
             }
           },
