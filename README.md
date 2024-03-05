@@ -26,26 +26,23 @@
 ### 编程
 - MySQL
 - HTML 5
-- Java
-- Spring, Learning
-- Python
+- Java, Main
+- Python, Main
 - Shell
 - Git
-- VSCode
 - Markdown
 - $\LaTeX$
 
 <!-- .slide vertical=true -->
 
 ### 音声 & 视觉
-- Adobe After Effects
+- Adobe After Effects, Main
 - Adobe Premiere Pro
-- Aviutl
+- Adobe Illustrator
 - Krita
 - SAI 2
 - FL Studio
 - Blender, Learning
-- OpenToonz
 
 <!-- .slide vertical=true -->
 
@@ -63,6 +60,6 @@
 
 ### 个人子站
 
-- [AkutaZehy - 博客园 (cnblogs.com)](https://www.cnblogs.com/akuta-zehy/)
+<!-- - [AkutaZehy - 博客园 (cnblogs.com)](https://www.cnblogs.com/akuta-zehy/) -->
 - [WordPress 博文](https://akutazehy.home.blog/)
 
