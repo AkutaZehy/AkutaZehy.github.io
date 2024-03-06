@@ -25,9 +25,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/1970-01-01-tags.md",
+                "file": "_posts/1970-01-01-archive.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/1970-01-01-tags.md",
+                "file": "_posts/1970-01-01-archive.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/1970-01-01-tags.md",
+                "file": "_posts/1970-01-01-archive.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/1970-01-01-tags.md"
+                "file": "_posts/1970-01-01-archive.md"
               }
             }
           },
@@ -174,15 +174,20 @@
   },
   "active": "8c7fee86085fead9",
   "lastOpenFiles": [
+    "_posts/1970-01-01-comments.md",
+    "_posts/1970-01-01-archive.md",
+    "_posts/1970-01-01-项目经历.md",
+    "_posts/1970-01-01-404.md",
+    "_posts/2023-09-25-秋风集.md",
+    "_layouts/redirect.md",
+    "_archived/1970-01-01-tags.md",
+    "tags/test.md",
+    "_layouts/tags.md",
+    "_layouts/post.md",
     "tags/article.md",
     "tags/blog.md",
     "tags/collection.md",
     "_archived/novel.md",
-    "_posts/1970-01-01-404.md",
-    "_posts/1970-01-01-项目经历.md",
-    "_posts/1970-01-01-archive.md",
-    "_posts/1970-01-01-comments.md",
-    "_posts/1970-01-01-tags.md",
     "_posts/2023-08-21-test.md",
     "_posts/2023-08-21-test_02.md",
     "_posts/2023-08-23-添加Sakana小组件.md",
@@ -190,16 +195,11 @@
     "_posts/2023-08-24-血压升高的三两事01.md",
     "_posts/2023-08-25-血压升高的三两事02.md",
     "_posts/2023-09-25-接着玩Liquid表达式.md",
-    "_posts/2023-09-25-秋风集.md",
     "_posts/2023-11-02-好久不见，万圣快乐.md",
     "_posts/2023-11-04-语言的习性.md",
     "_posts/2024-03-05-繁花集.md",
     "_autumn/2023-12-03-在这奇怪的世界.md",
     "_autumn/2023-12-03-世界的良性与劣性.md",
-    "_autumn/2022-03-17-无题.md",
-    "_flower/2024-03-05-床.md",
-    "_flower/2024-03-06-蛇.md",
-    "tags/poem.md",
     "_flower",
     "assests/images/liar-dancer.png",
     "assests/images/message.jpg",
