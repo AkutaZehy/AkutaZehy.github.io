@@ -25,9 +25,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_starfall/2024-03-12-将死的妄断.md",
+                "file": "_flower/2024-03-21-湖.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_starfall/2024-03-12-将死的妄断.md",
+                "file": "_flower/2024-03-21-湖.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_starfall/2024-03-12-将死的妄断.md",
+                "file": "_flower/2024-03-21-湖.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_starfall/2024-03-12-将死的妄断.md"
+                "file": "_flower/2024-03-21-湖.md"
               }
             }
           },
@@ -174,8 +174,10 @@
   },
   "active": "95d2f68d4c6fe772",
   "lastOpenFiles": [
-    "_starfall/2023-12-02-大学社恐生存漫谈.md",
+    "_flower/2024-03-06-蛇.md",
+    "_flower/2024-03-21-湖.md",
     "_starfall/2024-03-12-将死的妄断.md",
+    "_starfall/2023-12-02-大学社恐生存漫谈.md",
     "_posts/2023-08-24-星落集.md",
     "_posts/2023-09-25-秋风集.md",
     "_autumn/2022-03-17-无题.md",
@@ -198,8 +200,6 @@
     "tags/collection.md",
     "_archived/novel.md",
     "_posts/2023-08-21-test_02.md",
-    "_posts/2023-08-23-添加Sakana小组件.md",
-    "_posts/2023-08-24-血压升高的三两事01.md",
     "_flower",
     "assests/images/liar-dancer.png",
     "assests/images/message.jpg",
