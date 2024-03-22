@@ -3,7 +3,13 @@
   "readableLineLength": true,
   "showLineNumber": true,
   "trashOption": "system",
-  "alwaysUpdateLinks": false,
+  "alwaysUpdateLinks": true,
   "useMarkdownLinks": true,
-  "foldHeading": false
+  "foldHeading": false,
+  "vimMode": false,
+  "promptDelete": false,
+  "newFileLocation": "current",
+  "newLinkFormat": "relative",
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "assests"
 }

@@ -6,15 +6,12 @@
   "canvas",
   "outgoing-link",
   "tag-pane",
-  "properties",
   "page-preview",
-  "daily-notes",
-  "templates",
   "command-palette",
   "editor-status",
-  "bookmarks",
   "markdown-importer",
   "outline",
   "word-count",
+  "workspaces",
   "file-recovery"
 ]
