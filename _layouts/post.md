@@ -30,6 +30,7 @@ layout: comments
   {{ content }}
 </div>
 
+<!--
 {% if page.jekyll-theme-WuK.post.related_posts.enable %}
 {% if site.related_posts.size >= 1 %}
 <div class="related">
@@ -49,3 +50,7 @@ layout: comments
 </div>
 {% endif %}
 {% endif %}
+
+-->
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=371 height=110 src="//music.163.com/outchain/player?type=0&id=9508900542&auto=0&height=90"></iframe>

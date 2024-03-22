@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_starfall/2023-12-02-大学社恐生存漫谈.md",
+                "file": "_layouts/post.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           },
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_flower/2024-03-21-湖.md",
+                "file": "_layouts/post.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_flower/2024-03-21-湖.md",
+                "file": "_layouts/post.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_flower/2024-03-21-湖.md"
+                "file": "_layouts/post.md"
               }
             }
           },
@@ -172,12 +171,13 @@
       "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
-  "active": "95d2f68d4c6fe772",
+  "active": "ed56f886f901b021",
   "lastOpenFiles": [
-    "_flower/2024-03-06-蛇.md",
-    "_flower/2024-03-21-湖.md",
     "_starfall/2024-03-12-将死的妄断.md",
+    "tags/test.md",
     "_starfall/2023-12-02-大学社恐生存漫谈.md",
+    "_flower/2024-03-21-湖.md",
+    "_flower/2024-03-06-蛇.md",
     "_posts/2023-08-24-星落集.md",
     "_posts/2023-09-25-秋风集.md",
     "_autumn/2022-03-17-无题.md",
@@ -192,7 +192,6 @@
     "_posts/1970-01-01-项目经历.md",
     "_layouts/redirect.md",
     "_archived/1970-01-01-tags.md",
-    "tags/test.md",
     "_layouts/tags.md",
     "_layouts/post.md",
     "tags/article.md",
