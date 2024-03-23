@@ -9,7 +9,7 @@
   "vimMode": false,
   "promptDelete": false,
   "newFileLocation": "current",
-  "newLinkFormat": "relative",
+  "newLinkFormat": "absolute",
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "assests"
 }
