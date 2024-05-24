@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: "Gothic";
+  src: url("../fonts/GlowSansSC-Normal-Medium.otf");
+  /*     src:url('Lato-Regular.ttf');*/
+}
+
+body {
+  text-align: left;
+  background-color: #ebebeb;
+  padding: 0 1em;
+  font-family: "Gothic", "IBM Plex Sans", "PingFang SC", "Hiragino Sans GB",
+    "Sarasa Gothic SC", "Microsoft Yahei UI", "Microsoft Yahei", sans-serif;
+}
+
+#page {
+  text-align: left;
+  max-width: 80em;
+  margin: 0 auto;
+}
+
+.indx {
+  text-align: left;
+  padding: 0 2em;
+}
+
+.artc {
+  padding: 0 2em;
+}
+
+.clmn {
+  text-align: left;
+  vertical-align: top;
+  display: inline-block;
+  width: 49%;
+}
+
+.intb {
+  /* 语录 */
+  background-color: #d8d8d8;
+  padding: 1em 2em;
+}
+
+.frm {
+  /*border:#183038 solid 2px;*/
+  padding: 1em 2em;
+  background-color: #c8d0e8;
+}
+
+h1 {
+  /*text-align: center;*/
+  color: #101010;
+  font-size: 2.25rem;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  font-weight: normal;
+}
+
+h2 {
+  color: #101010;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+h3 {
+  color: #101010;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+h4 {
+  color: #101010;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+h5 {
+  color: #101010;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+h6 {
+  color: #101010;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+p {
+  color: #404040;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 0.875rem;
+}
+
+.hg1 {
+  color: #101010;
+  font-size: 2.5rem;
+  margin: 1.75rem 0;
+  font-weight: 300;
+}
+
+.hg2 {
+  color: #808080;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  margin: 1.5rem 0;
+}
+
+.sml {
+  text-align: left;
+  color: #808080;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.875rem;
+}
+
+.aud {
+  text-align: left;
+}
+
+.note {
+  /* 小的注释文字 */
+  color: #808080;
+  font-size: 0.875rem;
+  /*float: right;*/
+}
+
+a:link,
+a:visited {
+  color: #404040;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #808080;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto 1.125em;
+  display: inline-flex;
+  box-shadow: 0 0.25em 2em #d8d8d8;
+  text-align: center;
+  height: auto;
+}
+
+hr {
+  border-top-color: #d8d8d8;
+  border-top-width: 1px;
+  border-top-style: inset;
+  margin: 1.5em 0;
+}
+
+@media screen and (max-width: 480px) {
+  .indx {
+    padding: 0 1em;
+  }
+
+  .artc {
+    padding: 0 1em;
+  }
+
+  .clmn {
+    display: block;
+    width: auto;
+  }
+
+  .intb {
+    padding: 0.75em 1.5em;
+  }
+
+  .hg1 {
+    font-size: 2.125rem;
+    margin: 1.5rem 0;
+  }
+
+  .hg2 {
+    font-size: 1.5rem;
+    margin: 1.25rem 0;
+  }
+}
+
+.photo {
+  float: left;
+  width: 20%;
+}
+
+.intro {
+  float: right;
+  width: 80%;
+}
