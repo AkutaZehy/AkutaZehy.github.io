@@ -5,23 +5,32 @@
 }
 
 @font-face {
-  font-family: "Gothic";
-  src: url("../fonts/GlowSansSC-Normal-Medium.otf");
-  /*     src:url('Lato-Regular.ttf');*/
+  font-family: "GlowSans";
+  src: url("/assets/fonts/GlowSansSC-Normal-Medium.otf");
+}
+
+@font-face {
+  font-family: "Terminus";
+  src: url("/assets/fonts/TerminusTTF-Bold.ttf");
+}
+
+@font-face {
+  font-family: "HigashiOme";
+  src: url("/assets/fonts/HigashiOme-Gothic-1.3i.ttf");
 }
 
 body {
   text-align: left;
   background-color: #ebebeb;
   padding: 0 1em;
-  font-family: "Gothic", "IBM Plex Sans", "PingFang SC", "Hiragino Sans GB",
-    "Sarasa Gothic SC", "Microsoft Yahei UI", "Microsoft Yahei", sans-serif;
+  font-family: "HigashiOme", sans-serif;
 }
 
 #page {
   text-align: left;
   max-width: 80em;
   margin: 0 auto;
+  padding: 0 0;
 }
 
 .indx {
@@ -138,7 +147,7 @@ p {
 
 a:link,
 a:visited {
-  color: #404040;
+  color: #e3800f;
   text-decoration: none;
 }
 
