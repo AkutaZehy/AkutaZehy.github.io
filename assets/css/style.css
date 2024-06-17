@@ -1,8 +1,8 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   border: 0;
-}
+} */
 
 @font-face {
   font-family: "GlowSans";
@@ -17,6 +17,11 @@
 @font-face {
   font-family: "HigashiOme";
   src: url("/assets/fonts/HigashiOme-Gothic-1.3i.ttf");
+}
+
+@font-face {
+  font-family: "Milky";
+  src: url("/assets/fonts/milky-term-cl-normal.ttf");
 }
 
 body {
@@ -110,6 +115,19 @@ p {
   font-size: 1rem;
   line-height: 1.75rem;
   margin-bottom: 0.875rem;
+}
+
+table {
+  border: 1px solid black;
+}
+
+th {
+  border: 1px solid black;
+  text-align: center;
+}
+
+td {
+  border: 1px solid black;
 }
 
 .hg1 {
