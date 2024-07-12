@@ -130,6 +130,13 @@ td {
   border: 1px solid black;
 }
 
+li {
+  color: #404040;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 0.875rem;
+}
+
 .hg1 {
   color: #101010;
   font-size: 2.5rem;
@@ -192,6 +199,16 @@ hr {
   margin: 1.5em 0;
 }
 
+details {
+  margin: 1.5em 0;
+
+}
+
+code {
+  font-family: "Milky", monospace;
+  background-color: #dce9bf;
+}
+
 @media screen and (max-width: 480px) {
   .indx {
     padding: 0 1em;
@@ -230,3 +247,4 @@ hr {
   float: right;
   width: 80%;
 }
+
