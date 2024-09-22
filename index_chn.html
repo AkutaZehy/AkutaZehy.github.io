@@ -2,33 +2,57 @@
 <html lang="zh-cn">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <script src="/assets/js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="/assets/js/main.js" defer></script>
+    <style>
+      .wiggling-text {
+        color: #808080;
+        font-size: 0.875rem;
+      }
+
+      .wiggling-text span {
+        display: inline-block;
+        animation: wiggle infinite;
+      }
+
+      .wiggling-text.no-animation span {
+        animation: none;
+      }
+      
+      @keyframes wiggle {
+        0% {
+          transform: translateX(0) translateY(0);
+        }
+        25% {
+          transform: translateX(3px) translateY(-3px);
+        }
+        50% {
+          transform: translateX(0) translateY(5px);
+        }
+        75% {
+          transform: translateX(-3px) translateY(-3px);
+        }
+        100% {
+          transform: translateX(0) translateY(0);
+        }
+      }
+    </style>
     <title>欢迎来到悪橘ざひ的小铺</title>
   </head>
 
   <body id="page">
     <script>
-      welcome();
+      document.addEventListener('DOMContentLoaded', () => {
+        welcome();
+      });
     </script>
 
     <header>
       <p class="hg1">欢迎来到悪橘ざひ的小铺</p>
       <p class="hg2">
-        <a
-          href="/pages/docs/about-site.html"
-          color="grey"
-          font-weight="lighter"
-          >关于本站</a
-        >
+        <a href="/pages/docs/about-site.html" color="grey" font-weight="lighter">关于本站</a>
       </p>
     </header>
 
@@ -40,20 +64,12 @@
     <h2>联系</h2>
     <p>你可以通过以下方式找到我：</p>
     <p>
-      <a href="space.bilibili.com/11622717">
-        <i
-          class="fa-brands fa-bilibili fa-2xl"
-          aria-hidden="true"
-          style="color: rgb(255, 0, 128)"
-        ></i>
+      <a href="https://space.bilibili.com/11622717">
+        <i class="fa-brands fa-bilibili fa-2xl" aria-hidden="true" style="color: rgb(255, 0, 128)"></i>
       </a>
       &nbsp;
-      <a href="github.com/AkutaZehy">
-        <i
-          class="fa-brands fa-github fa-2xl"
-          aria-hidden="true"
-          style="color: rgb(0, 0, 0)"
-        ></i>
+      <a href="https://github.com/AkutaZehy">
+        <i class="fa-brands fa-github fa-2xl" aria-hidden="true" style="color: rgb(0, 0, 0)"></i>
       </a>
       &nbsp;
       <a href="mailto:akuta-zehy@outlook.com">
@@ -66,10 +82,23 @@
     <footer>
       <p color="grey">仍在持续更新中。</p>
       <p>
-        ©2018-2024 Akuta Zehy，保留部分权利。<span class="note"
-          >2018怎么是6年前</span
-        >
+        ©2018-2024 Akuta Zehy，保留部分权利。
+        <span class="wiggling-text">
+          <span>2</span>
+          <span>0</span>
+          <span>1</span>
+          <span>8</span>
+          <span>怎</span>
+          <span>么</span>
+          <span>是</span>
+          <span>6</span>
+          <span>年</span>
+          <span>前</span>
+          <span>！</span>
+        </span>
       </p>
+
+      <script src="/assets/js/wiggling-text.js" defer></script>
     </footer>
   </body>
 </html>

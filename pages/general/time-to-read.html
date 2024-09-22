@@ -25,6 +25,27 @@
 
     <hr />
 
+    <h2>今日诗词</h2>
+    <p>今天是：
+      <script>
+        var today = new Date();
+        var date = today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日";
+        document.write(date);
+      </script>
+    </p>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <div id="poem_info"></div>
+    <div id="poem_sentence"></div>
+    <script type="text/javascript">
+      jinrishici.load(function(result) {
+        var sentence = document.querySelector("#poem_sentence")
+        var info = document.querySelector("#poem_info")
+        sentence.innerHTML = result.data.content
+        info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+      });
+    </script>
+    <hr />
+
     <div id="content"></div>
     <script>
       renderMarkdown("time-to-read");
@@ -33,6 +54,9 @@
     <hr />
     <footer>
       <p color="grey">你来到了页面的底部。</p>
+      <p>上面这个显示诗词的小组件参见<a href="https://www.jinrishici.com/">今日诗词</a>。</p>
     </footer>
+
   </body>
+
 </html>
