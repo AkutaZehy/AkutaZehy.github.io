@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // 添加按钮的点击事件
   const button = document.querySelector('#nuclearButton');
   button.addEventListener('click', () => {
+    // 修改页面标题
+    document.title = 'LOOK WHAT YOU HAVE DONE!';
+
     // 给每个元素赋予水平速度
     icons.forEach(icon => {
       const speed = Math.random() * 50 - 25; // 随机生成速度
