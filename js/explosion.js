@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const icons = document.querySelectorAll('.ico');
+  const audio = document.getElementById('bgm');
+  let isPlaying = false;
 
   // 初始化每个元素的位置
   icons.forEach(icon => {
@@ -15,6 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
   button.addEventListener('click', () => {
     // 修改页面标题
     document.title = 'LOOK WHAT YOU HAVE DONE!';
+
+    // 播放音频
+    if (!isPlaying) {
+      audio.play();
+      isPlaying = true;
+    }
 
     // 给每个元素赋予水平和垂直速度
     icons.forEach(icon => {
