@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const icons = document.querySelectorAll('.ico');
   const audio = document.getElementById('bgm');
+  const video = document.getElementById('explode');
   let isPlaying = false;
 
   // 初始化每个元素的位置
@@ -21,7 +22,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // 播放音频
     if (!isPlaying) {
       audio.play();
+      audio.volume = 0.2;
       isPlaying = true;
+    }
+
+    if (video) {
+      video.classList.remove('hidden');
+      video.play();
+
+      video.addEventListener('ended', () => {
+        video.classList.add('hidden');
+      });
+    }
+
+    if (button) {
+      button.classList.add('hidden');
     }
 
     // 给每个元素赋予水平和垂直速度
