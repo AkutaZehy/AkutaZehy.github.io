@@ -67,6 +67,37 @@ body {
   text-align: center;
 }
 
+.hidden {
+  display: none;
+}
+
+#explode {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 160px; /* 根据需要调整宽度 */
+  height: 120px; /* 根据需要调整高度 */
+  z-index: 1000; /* 确保视频在最上层 */
+  border: none; /* 移除边框 */
+  outline: none; /* 移除外框 */
+}
+
+#explode::-webkit-media-controls {
+  display: none !important; /* 隐藏视频控件 */
+}
+
+#introVideo::-moz-media-controls {
+  display: none !important; /* 隐藏视频控件 */
+}
+
+#introVideo::-ms-media-controls {
+  display: none !important; /* 隐藏视频控件 */
+}
+
+#introVideo::media-controls {
+  display: none !important; /* 隐藏视频控件 */
+}
+
 #nuclearButton {
   width: 100px;
   height: 100px;
