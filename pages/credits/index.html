@@ -5,10 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CREDITS</title>
     <link rel="stylesheet" href="/css/styles.css" />
+    <style>
+      body {
+        flex-direction: column;
+      }
+
+      span {
+        color: #999;
+        font-size: 0.8rem;
+      }
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+    </style>
   </head>
   <body>
-    <div id="fish-navigate"></div>
+    <div id="container">
+      <div id="fish-navigate"></div>
+
+      <h1 id="title">CREDITS</h1>
+
+      <h2>Inspired By</h2>
+      <ul>
+        <li>
+          <a href="https://xxhyz.net" target="_blank">XXHYZ's Site</a>
+        </li>
+        <li>
+          <a href="http://westyomogi.xyz/" target="_blank">
+            西よもぎ (West Yomogi)
+          </a>
+          <span> &nbsp; 国内的蘑拟同人站 </span>
+        </li>
+        <li>
+          <a href="https://ynoproject.net/"> YNO Project </a>
+          <span> &nbsp; 梦日记同人站其一 </span>
+        </li>
+        <li>
+          <a
+            href="https://store.steampowered.com/app/1078420/Critters_for_Sale/"
+          >
+            Critters for Sale
+          </a>
+        </li>
+      </ul>
+
+      <h2>Special Thanks</h2>
+      对以下开源字体的作者表示感谢：
+      <ul>
+        <li>
+          <a href="http://font.w4c.work/status/67"> 東青梅ゴシック </a>
+        </li>
+        <li>
+          <a href="https://www.freejapanesefont.com/mushin-free-download/">
+            Mushin
+          </a>
+        </li>
+        <li>
+          <a href="https://unifoundry.com/unifont.html"> GNU Unifont </a>
+        </li>
+      </ul>
+    </div>
     <script src="/scripts/load-fish.js"></script>
-    <h1>致谢</h1>
+
+    <footer>
+      <div id="what"></div>
+      <p>Akuta Zehy</p>
+    </footer>
+    <script>
+      const calculate = document.getElementById("what");
+
+      var currentDate = new Date();
+      var targetDate = new Date("2018-01-01");
+      var yearsAgo = Math.floor(
+        (currentDate - targetDate) / (1000 * 60 * 60 * 24 * 365)
+      );
+      calculate.innerHTML = `<p>2018 怎么是 ${yearsAgo} 年前</p>`;
+    </script>
+
+    <script src="/scripts/cursor-listener.js"></script>
   </body>
 </html>
