@@ -5,10 +5,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const fishText = document.createElement('div');
     fishText.classList.add('fish-text');
     const randomNum = Math.random();
-    if (randomNum < 0.05) {
-      const fishOptions = ['sakana', '鱼', 'рыбы', 'poisson', 'pez', 'pescare', 'fisch'];
-      const randomFish = fishOptions[Math.floor(Math.random() * fishOptions.length)];
+    let fishOptions, randomFish;
+
+    if (randomNum < 0.1) {
+      fishOptions = ['sakana', '鱼', 'рыбы', 'poisson', 'pez', 'pescare', 'fisch', '[ˈfɪʃ]', '🐟'];
+      randomFish = fishOptions[Math.floor(Math.random() * fishOptions.length)];
       fishText.textContent = randomFish;
+    } else if (randomNum < 0.25) {
+      fishOptions = ['𓆝', '𓆟', '𓆞', '𓆟'];
+      fishText.textContent = fishOptions[0];
+      fishText.classList.add('active-fish');
     } else {
       fishText.textContent = 'fish';
     }
@@ -20,10 +26,18 @@ document.addEventListener('DOMContentLoaded', function () {
     fishText.style.left = `${startX}px`;
     fishText.style.top = `0px`;
 
+    fishContainer.appendChild(fishText);
+
+    if (randomNum > 0.09 && randomNum < 0.25) {
+      let fishIndex = 0;
+      setInterval(() => {
+        fishIndex = (fishIndex + 1) % fishOptions.length;
+        fishText.textContent = fishOptions[fishIndex];
+      }, 500);
+    }
+
     const a = Math.random() * 0.01 + 0.001;
     const b = Math.random() * 2 - 1;
-
-    fishContainer.appendChild(fishText);
 
     let startTime = null;
     function animateFish (timestamp) {
@@ -33,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const y = a * progress + b;
       fishText.style.top = `${y}px`;
 
-      if (y > window.innerHeight * 0.9) {
+      if (y > window.innerHeight) {
         setTimeout(() => {
           fishText.remove();
         }, 1000);

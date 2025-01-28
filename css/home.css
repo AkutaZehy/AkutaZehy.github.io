@@ -37,3 +37,29 @@ html {
   user-select: none;
   color: #fff;
 }
+
+.active-fish {
+  position: absolute;
+  white-space: nowrap;
+  user-select: none;
+  color: #fff;
+  animation: swim 5s linear infinite;
+}
+
+.active-fish {
+  position: absolute;
+  white-space: nowrap;
+  user-select: none;
+  color: #fff;
+  animation: swim 30s linear infinite;
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(-100vw);
+  }
+}
