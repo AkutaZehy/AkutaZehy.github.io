@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const startX = Math.random() * window.innerWidth;
     fishText.style.left = `${startX}px`;
-    fishText.style.top = `-50px`;
+    fishText.style.top = `0px`;
 
     const a = Math.random() * 0.01 + 0.001;
     const b = Math.random() * 2 - 1;
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const y = a * progress + b;
       fishText.style.top = `${y}px`;
 
-      if (y > window.innerHeight) {
+      if (y > window.innerHeight * 0.9) {
         setTimeout(() => {
           fishText.remove();
         }, 1000);
