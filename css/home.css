@@ -1,0 +1,37 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000000;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.center-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spin-fish {
+  width: auto;
+  height: 100px;
+}
+
+.fish-text {
+  position: absolute;
+  white-space: nowrap;
+  user-select: none;
+  color: #fff;
+}

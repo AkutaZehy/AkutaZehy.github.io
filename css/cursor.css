@@ -1,0 +1,55 @@
+body {
+  cursor: url("/resources/cursor/01-normal-select.png"), auto;
+}
+
+.text-hover {
+  cursor: url("/resources/cursor/06-text-select.png"), text;
+}
+
+a {
+  cursor: url("/resources/cursor/15-link-select.png"), pointer;
+}
+
+.help {
+  cursor: url("/resources/cursor/02-help-select.png"), help;
+}
+
+.wait {
+  cursor: url("/resources/cursor/04-busy.png"), wait;
+}
+
+.crosshair {
+  cursor: url("/resources/cursor/05-precision-select.png"), crosshair;
+}
+
+/* .text {
+  cursor: url("/resources/cursor/06-text-select.png"), text;
+} */
+
+.handwriting {
+  cursor: url("/resources/cursor/07-handwriting.png"), text;
+}
+
+.not-allowed {
+  cursor: url("/resources/cursor/08-unavailable.png"), not-allowed;
+}
+
+.ns-resize {
+  cursor: url("/resources/cursor/09-vertical-resize.png"), ns-resize;
+}
+
+.ew-resize {
+  cursor: url("/resources/cursor/10-horizontal-resize.png"), ew-resize;
+}
+
+.nwse-resize {
+  cursor: url("/resources/cursor/11-diagonal-resize-1.png"), nwse-resize;
+}
+
+.nesw-resize {
+  cursor: url("/resources/cursor/12-diagonal-resize-2.png"), nesw-resize;
+}
+
+.move {
+  cursor: url("/resources/cursor/13-move.png"), move;
+}

@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Mushin';
+  src: url('/resources/fonts/mushin.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Higashi';
+  src: url('/resources/fonts/HigashiOme-Gothic-1.3i.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #111;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+}
+
+.top-section {
+  height: 15%;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.door {
+  fill: darkred;
+  transition: fill 0.5s;
+}
+
+.background {
+  fill: black;
+  transition: fill 0.5s;
+}
+
+.arrow,
+.light,
+.person,
+.person-body {
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+}
+
+.bottom-section {
+  height: 85%;
+  display: flex;
+}
+
+.area {
+  flex: 1;
+  position: relative;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: flex 0.5s ease;
+}
+
+.area:last-child {
+  border-right: none;
+}
+
+.title {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2em;
+  text-align: center;
+  white-space: nowrap;
+  font-family: 'Mushin', 'Courier New', Courier, monospace;
+  font-size: 5em;
+}
+
+.description {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5em;
+  text-align: center;
+  opacity: 0.8;
+  white-space: nowrap;
+  font-family: 'Higashi', 'Courier New', Courier, monospace;
+}
+
+.area {
+  flex: 1;
+  position: relative;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+  transition: flex 0.5s ease;
+}
+
+.area:last-child {
+  border-right: none;
+}
+
+@media (hover: hover) {
+  .area:hover {
+    flex: 2;
+  }
+
+  .area:hover~.area {
+    flex: 0.8;
+  }
+}
+
+.area.expanded {
+  flex: 2;
+}
+
+.area.expanded~.area {
+  flex: 0.8;
+}
+
+@keyframes blink {
+  0% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  50% {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  100% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.area.active {
+  animation: blink 0.5s ease 2;
+}

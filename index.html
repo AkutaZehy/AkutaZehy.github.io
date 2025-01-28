@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/APlayer.min.css" />
+    <script src="/scripts/APlayer.min.js"></script>
+  </head>
+  <body>
+    <div
+      id="aplayer"
+      class="aplayer"
+      data-order="random"
+      data-id="9508900542"
+      data-server="netease"
+      data-type="playlist"
+      data-fixed="true"
+      data-autoplay="false"
+      data-volume="0.3"
+      lrcType="0"
+    ></div>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex">
-  <title>Welcome to Zehy's Dessert Store</title>
-  <link rel="stylesheet" href="/resources/css/monawa.css">
-</head>
+    <div class="center-container" title="ok this is a fish">
+      <a href="/pages/navigate.html">
+        <img
+          src="/resources/images/moving/fish-spin.gif"
+          alt="Spinning Fish"
+          class="spin-fish"
+      /></a>
+    </div>
 
-<body>
-  <div class="contents-box">
-    <span class="contents-title">Akuta Zehy's Dessert Store</span>
+    <div id="fish-container"></div>
 
-    <a href="/about.html" class="contents-entry">
-      <div class="entry-number">01</div>
+    <script src="/scripts/fish-machine.js"></script>
+  </body>
 
-      <div class="entry-title">About this site</div>
-
-      <div class="entry-line"></div>
-
-      <div class="entry-page">005</div>
-    </a>
-
-		<a href="/links/" class="contents-entry">
-			<div class="entry-number">02</div>
-
-			<div class="entry-title">Links</div>
-
-			<div class="entry-line"></div>
-
-			<div class="entry-page">012</div>
-
-  </div>
-</body>
-
+  <footer>
+    <script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/layer/layer.js"></script>
+  </footer>
 </html>

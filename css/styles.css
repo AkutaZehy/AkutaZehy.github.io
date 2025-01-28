@@ -1,0 +1,7 @@
+@import url("/css/cursor.css");
+
+/* 从下面开始是非全局样式 */
+
+.no-select {
+  user-select: none;
+}
