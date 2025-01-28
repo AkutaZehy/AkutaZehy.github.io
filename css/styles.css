@@ -12,14 +12,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: #111;
+  color: #f0f0f0;
+}
+
+a:visited {
+  color: inherit;
 }
 
 h1 {
   font-family: 'Higashi', sans-serif;
   font-size: 5em;
-  color: #333;
+  color: #f0f0f0;
   align-self: center;
+}
+
+h2 {
+  color: #f0f0f0;
 }
 
 #container {
