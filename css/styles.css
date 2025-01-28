@@ -1,5 +1,42 @@
 @import url("/css/cursor.css");
 
+@font-face {
+  font-family: 'Higashi';
+  src: url('/resources/fonts/HigashiOme-Gothic-1.3i.ttf') format('truetype');
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  font-family: 'Higashi', sans-serif;
+  font-size: 5em;
+  color: #333;
+  align-self: center;
+}
+
+#container {
+  z-index: 1;
+  width: 80vw;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#fish-navigate {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9999;
+}
+
 /* 从下面开始是非全局样式 */
 
 .no-select {
