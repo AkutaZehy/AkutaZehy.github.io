@@ -8,6 +8,10 @@ p {
   line-height: 2rem;
 }
 
+iframe {
+  width: 90%;
+}
+
 .info {
   display: flex;
   align-items: center;
