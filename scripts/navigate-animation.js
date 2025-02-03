@@ -3,6 +3,15 @@ const navigateSound1 = new Audio('/resources/sound/sfx/sheep1.wav');
 const navigateSound2 = new Audio('/resources/sound/sfx/sheep2.wav');
 const navigateSound3 = new Audio('/resources/sound/sfx/sheep3.wav');
 
+function playSound (area) {
+  if (area.id === '0') {
+    navigateSound0.play();
+  } else {
+    const randomSound = Math.floor(Math.random() * 3) + 1;
+    eval(`navigateSound${randomSound}.play()`);
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   const areas = document.querySelectorAll('.area');
 
@@ -13,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
       area.addEventListener('click', function () {
         if (area.classList.contains('expanded')) {
           area.classList.add('active');
+          playSound(area);
           setTimeout(() => {
             const link = area.getAttribute('data-link');
             window.location.href = link;
@@ -22,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
           area.classList.add('expanded');
           setTimeout(() => {
             area.classList.add('active');
+            playSound(area);
             setTimeout(() => {
               const link = area.getAttribute('data-link');
               window.location.href = link;
@@ -38,18 +49,11 @@ document.addEventListener('DOMContentLoaded', function () {
     areas.forEach(area => {
       area.addEventListener('click', function () {
         area.classList.add('active');
-
-        if (area.id === '0') {
-          navigateSound0.play();
-        } else {
-          const randomSound = Math.floor(Math.random() * 3) + 1;
-          eval(`navigateSound${randomSound}.play()`);
-        }
-
+        playSound(area);
         setTimeout(() => {
           const link = area.getAttribute('data-link');
           window.location.href = link;
-        }, 2000);
+        }, 1000);
       });
 
       area.addEventListener('animationend', function () {
