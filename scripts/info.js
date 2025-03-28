@@ -6,6 +6,8 @@ const title = document.getElementById('title');
 const onSound = new Audio('/resources/sound/sfx/pc_on.wav');
 const offSound = new Audio('/resources/sound/sfx/pc_off.wav');
 
+const isNotify = false;
+
 function showSlide (index) {
   slides[currentSlide].classList.remove('active-slide');
   dots[currentSlide].classList.remove('active-dot');
@@ -22,32 +24,34 @@ function handleWheelEvent (event) {
   }
 }
 
+function handleNotification (message, icon) {
+  if (!isNotify) return;
+  Notification.requestPermission().then(permission => {
+    if (permission === 'granted') {
+      new Notification('Browser Notification', {
+        body: message,
+        icon: icon
+      });
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   title.addEventListener('click', function () {
     if (title.classList.contains('active')) {
       title.classList.remove('active');
       document.removeEventListener('wheel', handleWheelEvent);
       offSound.play();
-      Notification.requestPermission().then(permission => {
-        if (permission === 'granted') {
-          new Notification('Browser Notification', {
-            body: 'Wheel control has been deactivated.',
-            icon: '/resources/svgs/orange-seamless-pattern.svg'
-          });
-        }
-      });
+      message = 'Wheel control has been deactivated.';
+      icon = '/resources/svgs/blue-seamless-pattern.svg';
+      handleNotification(message, icon);
     } else {
       title.classList.add('active');
       document.addEventListener('wheel', handleWheelEvent);
       onSound.play();
-      Notification.requestPermission().then(permission => {
-        if (permission === 'granted') {
-          new Notification('Browser Notification', {
-            body: 'Wheel control has been activated.',
-            icon: '/resources/svgs/orange-seamless-pattern.svg'
-          });
-        }
-      });
+      message = 'Wheel control has been activated.';
+      icon = '/resources/svgs/orange-seamless-pattern.svg';
+      handleNotification(message, icon);
     }
   });
 

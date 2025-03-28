@@ -3,7 +3,10 @@ const navigateSound1 = new Audio('/resources/sound/sfx/sheep1.wav');
 const navigateSound2 = new Audio('/resources/sound/sfx/sheep2.wav');
 const navigateSound3 = new Audio('/resources/sound/sfx/sheep3.wav');
 
+const isPlaySound = false;
+
 function playSound (area) {
+  if (!isPlaySound) return;
   if (area.id === '0') {
     navigateSound0.play();
   } else {

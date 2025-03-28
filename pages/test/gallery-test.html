@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallary Test</title>
+    <link rel="stylesheet" href="/css/info.css" />
+  </head>
+  <body>
+    <div id="container">
+      <a href="index.html">
+        <img
+          src="/resources/images/moving/fish-spin.gif"
+          alt="Spinning Fish"
+          class="spin-fish"
+        />
+      </a>
+      <h1 id="title" title="experimental: toggle wheel">画廊测试</h1>
+      <p>请尝试单击图片，确认全屏预览是否正常工作。</p>
+
+      <div class="slideshow-container">
+        <div class="slide">
+          <h2>Gallary</h2>
+          <div class="container">
+            <div class="column">
+              <img
+                src="/resources/images/still/cry-for-the-moon.png"
+                alt="cry-for-the-moon"
+                class="image"
+              />
+              <img
+                src="/resources/images/still/practice-01.png"
+                alt="practice-01"
+                class="image"
+              />
+
+              <img
+                src="/resources/images/still/doodle-01.png"
+                alt="doodle-01"
+                class="image"
+              />
+              <img
+                src="/resources/images/still/yume-nikki-20th.png"
+                alt="yume-nikki-20th"
+                class="image"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="/resources/images/still/doodle-02.png"
+                alt="doodle02"
+                class="image"
+              />
+              <img
+                src="/resources/images/still/birthday-24-01.png"
+                alt="birthday-24-01"
+                class="image"
+              />
+              <img
+                src="/resources/images/still/zero-collab-24.png"
+                alt="zero-collab-24"
+                class="image"
+              />
+              <img
+                src="/resources/images/still/kigurumi.png"
+                alt="kigurumi"
+                class="image"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="/resources/images/still/segment-02.png"
+                alt="segment-02"
+                class="image"
+              />
+              <img
+                src="/resources/images/still/birthday-24-04.png"
+                alt="birthday-24-04"
+                class="image"
+              />
+              <img
+                src="/resources/images/still/birthday-24-09.png"
+                alt="birthday-24-09"
+                class="image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dot-container">
+        <span class="dot" onclick="showSlide(0)"></span>
+      </div>
+    </div>
+
+    <div class="fullscreen-view" id="fullscreenView">
+      <span class="close" id="closeBtn">&times;</span>
+      <img
+        class="fullscreen-image"
+        id="fullscreenImage"
+        src=""
+        alt="Fullscreen Image"
+      />
+    </div>
+
+    <script src="/scripts/load-fish.js"></script>
+    <script src="/scripts/info.js"></script>
+    <script src="/scripts/cursor-listener.js"></script>
+  </body>
+</html>
