@@ -5,6 +5,16 @@
   src: url('/resources/fonts/HigashiOme-Gothic-1.3i.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'OPPOSans';
+  src: url('/resources/fonts/OPPOSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  src: url('/resources/fonts/SFMono-Regular-10.otf') format('opentype');
+}
+
 body {
   width: 100vw;
   margin: 0;
@@ -14,6 +24,17 @@ body {
   align-items: center;
   background-color: #111;
   color: #f0f0f0;
+}
+
+p,
+a,
+span,
+i {
+  font-family: 'SF Mono', sans-serif;
+}
+
+a {
+  color: whitesmoke;
 }
 
 a:visited {
@@ -28,6 +49,7 @@ h1 {
 }
 
 h2 {
+  font-family: 'Higashi', sans-serif;
   color: #f0f0f0;
 }
 
