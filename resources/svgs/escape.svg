@@ -1,0 +1,39 @@
+<svg
+  id="escape-animation"
+  width="300"
+  height="100"
+  viewBox="0 0 300 100"
+  style="cursor: pointer;"
+>
+  <rect class="background" width="300" height="100" fill="#00AF6B" />
+  <rect class="door" x="40" y="10" width="50" height="75" fill="#00AF6B" />
+  <path
+    class="light"
+    d="m27.73814,95.62547l12.4,-10.5l49.6,0l-12.4,10.5l-49.6,0z"
+    fill="#ffffff"
+    opacity="0"
+    style="transition: opacity 0.3s;"
+  />
+  <path
+    class="arrow"
+    d="M176.65,66.4l12.49,-11.07h-24.14h-24.14v-6.85v-6.85h23.86c13.12,0 23.86,-0.35 23.86,-0.77c0,-0.42 -5.22,-5.41 -11.61,-11.07l-11.61,-10.3h10.73h10.73l16.39,14.51l16.39,14.51l-16.42,14.49l-16.42,14.49h-11.3h-11.3l12.49,-11.07z"
+    fill="white"
+    opacity="0"
+    style="transition: all 0.5s ease-out;"
+  />
+  <g 
+    class="person" 
+    transform="translate(0 0)" 
+    opacity="0" 
+    style="transition: all 0.8s ease-in-out;"
+  >
+    <circle
+        style="fill:darkgreen;fill-opacity:1"
+        cx="66.052376"
+        cy="26.874836"
+        r="6.0916295" />
+    <path
+        style="fill:darkgreen;fill-opacity:1"
+        d="m 47.297297,33.783784 25.168919,4.391892 -1.013513,6.418919 14.527027,1.858108 -1.858108,6.418919 -16.047298,-3.040541 -2.702702,9.290541 13.344594,21.79054 -11.655405,0.168919 -6.756757,-21.452703 -7.094595,11.655406 -20.27027,-8.277027 2.195946,-7.939189 14.02027,6.081081 L 59.121622,41.385135 53.885135,40.371622 44.256757,48.47973 38.175676,43.75 Z" />
+  </g>
+</svg>

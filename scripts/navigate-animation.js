@@ -1,100 +1,122 @@
-const navigateSound0 = new Audio('/resources/sound/sfx/sheep_demon.wav');
-const navigateSound1 = new Audio('/resources/sound/sfx/sheep1.wav');
-const navigateSound2 = new Audio('/resources/sound/sfx/sheep2.wav');
-const navigateSound3 = new Audio('/resources/sound/sfx/sheep3.wav');
+document.addEventListener("DOMContentLoaded", function () {
+  const navigateSound0 = new Audio("/resources/sound/sfx/sheep_demon.wav");
+  const navigateSound1 = new Audio("/resources/sound/sfx/sheep1.wav");
+  const navigateSound2 = new Audio("/resources/sound/sfx/sheep2.wav");
+  const navigateSound3 = new Audio("/resources/sound/sfx/sheep3.wav");
 
-const isPlaySound = false;
+  const isPlaySound = false;
 
-function playSound (area) {
-  if (!isPlaySound) return;
-  if (area.id === '0') {
-    navigateSound0.play();
-  } else {
-    const randomSound = Math.floor(Math.random() * 3) + 1;
-    eval(`navigateSound${randomSound}.play()`);
+  function playSound(area) {
+    if (!isPlaySound) return;
+    if (area.id === "0") {
+      navigateSound0.play();
+    } else {
+      const sounds = [navigateSound1, navigateSound2, navigateSound3];
+      const randomSound = sounds[Math.floor(Math.random() * sounds.length)];
+      randomSound.play();
+    }
   }
-}
 
-document.addEventListener('DOMContentLoaded', function () {
-  const areas = document.querySelectorAll('.area');
-
-  const isHoverSupported = window.matchMedia('(hover: hover)').matches;
+  const areas = document.querySelectorAll(".area");
+  const isHoverSupported = window.matchMedia("(hover: hover)").matches;
 
   if (!isHoverSupported) {
-    areas.forEach(area => {
-      area.addEventListener('click', function () {
-        if (area.classList.contains('expanded')) {
-          area.classList.add('active');
+    areas.forEach((area) => {
+      area.addEventListener("click", function () {
+        if (area.classList.contains("expanded")) {
+          area.classList.add("active");
           playSound(area);
           setTimeout(() => {
-            const link = area.getAttribute('data-link');
+            const link = area.getAttribute("data-link");
             window.location.href = link;
           }, 1000);
         } else {
-          areas.forEach(a => a.classList.remove('expanded'));
-          area.classList.add('expanded');
+          areas.forEach((a) => a.classList.remove("expanded"));
+          area.classList.add("expanded");
           setTimeout(() => {
-            area.classList.add('active');
+            area.classList.add("active");
             playSound(area);
             setTimeout(() => {
-              const link = area.getAttribute('data-link');
+              const link = area.getAttribute("data-link");
               window.location.href = link;
             }, 1000);
           }, 500);
         }
       });
 
-      area.addEventListener('animationend', function () {
-        area.classList.remove('active');
+      area.addEventListener("animationend", function () {
+        area.classList.remove("active");
       });
     });
   } else {
-    areas.forEach(area => {
-      area.addEventListener('click', function () {
-        area.classList.add('active');
+    areas.forEach((area) => {
+      area.addEventListener("click", function () {
+        area.classList.add("active");
         playSound(area);
         setTimeout(() => {
-          const link = area.getAttribute('data-link');
+          const link = area.getAttribute("data-link");
           window.location.href = link;
         }, 1000);
       });
 
-      area.addEventListener('animationend', function () {
-        area.classList.remove('active');
+      area.addEventListener("animationend", function () {
+        area.classList.remove("active");
       });
     });
   }
 
-  const svg = document.getElementById('escape-animation');
-  const door = document.querySelector('.door');
-  const background = document.querySelector('.background');
-  const arrow = document.querySelector('.arrow');
-  const light = document.querySelector('.light');
-  const person = document.querySelector('.person');
-  const person_body = document.querySelector('.person-body');
+  const svgContainer = document.getElementById("svg-container");
 
-  svg.addEventListener('click', () => {
-    door.style.fill = 'white';
-    background.style.fill = 'darkgreen';
+  if (svgContainer) {
+    fetch("/resources/svgs/escape.svg")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.text();
+      })
+      .then((svgData) => {
+        svgContainer.innerHTML = svgData;
 
-    setTimeout(() => {
-      light.style.opacity = 1;
-    }, 100);
+        initializeEscapeAnimation();
+      })
+      .catch((error) => {
+        console.error("Error loading or processing SVG:", error);
+      });
+  }
 
-    setTimeout(() => {
-      arrow.style.opacity = 1;
-      arrow.style.transform = 'translateX(50px)';
-    }, 500);
+  function initializeEscapeAnimation() {
+    const svg = document.getElementById("escape-animation");
 
-    setTimeout(() => {
-      person.style.opacity = 1;
-      person.style.transform = 'translateX(30px)';
-      person_body.style.opacity = 1;
-      person_body.style.transform = 'translateX(45px) translateY(-10px) rotate(30deg)';
-    }, 900);
+    if (!svg) {
+      console.error('SVG with id "escape-animation" not found after loading.');
+      return;
+    }
 
-    setTimeout(() => {
-      window.location.href = '../index.html';
-    }, 2000);
-  });
+    const door = svg.querySelector(".door");
+    const background = svg.querySelector(".background");
+    const arrow = svg.querySelector(".arrow");
+    const light = svg.querySelector(".light");
+    const person = svg.querySelector(".person");
+
+    svg.addEventListener("click", () => {
+      door.style.fill = "white";
+      background.style.fill = "darkgreen";
+
+      setTimeout(() => {
+        light.style.opacity = 1;
+      }, 100);
+
+      setTimeout(() => {
+        arrow.style.opacity = 1;
+        arrow.style.transform = "translateX(50px)";
+
+        person.classList.add("is-running");
+      }, 500);
+
+      setTimeout(() => {
+        window.location.href = "../index.html";
+      }, 2000);
+    });
+  }
 });
