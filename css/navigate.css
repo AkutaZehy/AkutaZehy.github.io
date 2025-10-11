@@ -8,13 +8,18 @@
   src: url('/resources/fonts/HigashiOme-Gothic-1.3i.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Ark Pixel';
+  src: url('/resources/fonts/ark-pixel-12px-proportional-zh_cn.otf') format('opentype');
+}
+
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
   background-color: #111;
   color: #fff;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Ark Pixel', Courier, monospace;
   overflow: hidden;
 }
 
@@ -76,7 +81,7 @@ svg {
   font-size: 2em;
   text-align: center;
   white-space: nowrap;
-  font-family: 'Mushin', 'Courier New', Courier, monospace;
+  font-family: 'Ark Pixel', 'Mushin', 'Courier New', Courier, monospace;
   font-size: 5em;
 }
 
@@ -89,7 +94,7 @@ svg {
   text-align: center;
   opacity: 0.8;
   white-space: nowrap;
-  font-family: 'Higashi', 'Courier New', Courier, monospace;
+  font-family: 'Ark Pixel', 'Higashi', 'Courier New', Courier, monospace;
 }
 
 .area {

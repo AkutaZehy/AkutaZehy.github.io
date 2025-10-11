@@ -9,352 +9,291 @@
   <body>
     <div id="container">
       <div id="fish-navigate"></div>
-      <h1 id="title" title="experimental: toggle wheel">ME</h1>
 
-      <div class="slideshow-container">
-        <div class="slide">
-          <div style="display: flex">
-            <div style="flex: 5">
-              <h2>Akuta Zehy</h2>
+      <div id="main-wrapper">
+        <nav id="menu-container">
+          <a href="#" class="menu-item active-menu-item" data-slide="0">ME</a>
+          <a href="#" class="menu-item" data-slide="1">GALLERY</a>
+          <a href="#" class="menu-item" data-slide="2">WORKS</a>
+          <a href="#" class="menu-item" data-slide="3">OTHERS</a>
+        </nav>
 
-              <div>
-                <p>
-                  An amatuer creator in all aspects.<br />
-                  I am a software engineer.
-                </p>
-              </div>
-
-              <h2>Sites</h2>
-
-              <div>
-                <div class="info">
-                  <img
-                    src="/resources/svgs/xlog.svg"
-                    alt="xlog"
-                    weight="31"
-                    height="31"
-                    style="background-color: aliceblue; margin-right: 1rem"
-                  />
-                  <a href="https://akuta-zehy-8188.xlog.app/" target="_blank">
-                    Blog in Chinese</a
-                  >
-                </div>
-
-                <div class="info">
-                  <img
-                    src="/resources/svgs/pixiv.svg"
-                    alt="pixiv"
-                    weight="31"
-                    height="31"
-                    style="margin-right: 1rem"
-                  />
-                  <a
-                    href="https://www.pixiv.net/users/20959310/"
-                    target="_blank"
-                    >My pixiv</a
-                  >
-                </div>
-
-                <div class="info">
-                  <img
-                    src="/resources/svgs/github.svg"
-                    alt="github"
-                    weight="31"
-                    height="31"
-                    style="background-color: aliceblue; margin-right: 1rem"
-                  />
-                  <a href="https://github.com/AkutaZehy" target="_blank"
-                    >GitHub</a
-                  >
-                </div>
-
-                <div class="info">
-                  <img
-                    src="/resources/svgs/wordpress.svg"
-                    alt="wordpress"
-                    weight="31"
-                    height="31"
-                    style="margin-right: 1rem"
-                  />
-                  <a href="http://akutazehy.home.blog/" target="_blank"
-                    >wordpress blog</a
-                  >
+        <div class="slideshow-container">
+          <div class="slide active-slide" data-name="me">
+            <div class="bio-layout">
+              <div class="bio-left">
+                <h2>
+                  <ruby>
+                    悪<rt>あく</rt>
+                    橘<rt>た</rt>
+                    遥<rt>ざひ</rt>
+                  </ruby>
+                </h2>
+                <div>
+                  <p>
+                    const nickname = "Akuta Zehy";
+                  </p>
+                  <p>
+                    // An amatuer creator in all aspects.<br />
+                  </p>
+                  <p>
+                    /// <br />
+                    I mean, I <em>am</em> a software engineer, <br />
+                    yet, a musician, a writer, a painter, a video
+                    editor, a gamer, a game producer, a connoisseur, a
+                    philosopher. <br />
+                    ///
+                  </p>
                 </div>
               </div>
-            </div>
 
-            <div style="flex: 4; align-items: center; align-self: center">
-              <h2>Selfie</h2>
-              <div
-                style="
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  max-width: 500px;
-                "
-              >
-                <img
-                  src="/resources/images/still/selfie-24.png"
-                  alt="selfie-24"
-                  class="image"
-                  style="max-height: 100%; margin-bottom: 1rem"
-                />
-                <div style="text-align: center">
-                  <i>Selfie in my 23rd birthday, on December 18th, 2024</i>
+              <div class="bio-right">
+                <h2>Selfie</h2>
+                <div class="selfie-content">
+                  <img
+                    src="/resources/images/still/selfie-24.png"
+                    alt="selfie-24"
+                    class="image" />
+                  <div style="text-align: center">
+                    <i>Selfie in my 23rd birthday, on December 18th, 2024</i>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="slide">
-          <h2>Gallery</h2>
-          <div class="container">
-            <div class="column">
+          <div class="slide" data-name="gallery">
+            <p>
+              Click the images to view in fullscreen mode.
+            </p>
+            <div class="gallery-grid">
               <img
-                src="/resources/images/still/cry-for-the-moon.png"
-                alt="cry-for-the-moon"
-                class="image"
-              />
-              <img
-                src="/resources/images/still/practice-01.png"
-                alt="practice-01"
-                class="image"
-              />
-
-              <img
-                src="/resources/images/still/doodle-01.png"
-                alt="doodle-01"
-                class="image"
-              />
-              <img
-                src="/resources/images/still/yume-nikki-20th.png"
-                alt="yume-nikki-20th"
-                class="image"
-              />
-            </div>
-            <div class="column">
-              <img
-                src="/resources/images/still/doodle-02.png"
-                alt="doodle02"
-                class="image"
-              />
+                src="/resources/images/still/cookie-romance.png"
+                alt="cookie-romance"
+                class="image gallery-item" />
               <img
                 src="/resources/images/still/birthday-24-01.png"
                 alt="birthday-24-01"
-                class="image"
-              />
-              <img
-                src="/resources/images/still/zero-collab-24.png"
-                alt="zero-collab-24"
-                class="image"
-              />
-              <img
-                src="/resources/images/still/kigurumi.png"
-                alt="kigurumi"
-                class="image"
-              />
-            </div>
-            <div class="column">
-              <img
-                src="/resources/images/still/segment-02.png"
-                alt="segment-02"
-                class="image"
-              />
+                class="image gallery-item" />
               <img
                 src="/resources/images/still/birthday-24-04.png"
                 alt="birthday-24-04"
-                class="image"
-              />
+                class="image gallery-item" />
               <img
                 src="/resources/images/still/birthday-24-09.png"
                 alt="birthday-24-09"
-                class="image"
-              />
+                class="image gallery-item" />
+              <img
+                src="/resources/images/still/cry-for-the-moon.png"
+                alt="cry-for-the-moon"
+                class="image gallery-item" />
+              <img
+                src="/resources/images/still/doodle-01.png"
+                alt="doodle-01"
+                class="image gallery-item" />
+              <img
+                src="/resources/images/still/doodle-02.png"
+                alt="doodle02"
+                class="image gallery-item" />
+              <img
+                src="/resources/images/still/kigurumi.png"
+                alt="kigurumi"
+                class="image gallery-item" />
+              <img
+                src="/resources/images/still/practice-01.png"
+                alt="practice-01"
+                class="image gallery-item" />
+              <img
+                src="/resources/images/still/segment-02.png"
+                alt="segment-02"
+                class="image gallery-item" />
+              <img
+                src="/resources/images/still/yume-nikki-20th.png"
+                alt="yume-nikki-20th"
+                class="image gallery-item" />
+              <img
+                src="/resources/images/still/zero-collab-24.png"
+                alt="zero-collab-24"
+                class="image gallery-item" />
             </div>
           </div>
-        </div>
 
-        <div class="slide">
-          <div style="display: flex">
-            <div style="flex: 5; min-width: 0; overflow: hidden">
-              <h2>Music</h2>
-              <div>
-                <iframe
-                  max-width="800px"
-                  height="166"
-                  scrolling="no"
-                  frameborder="no"
-                  allow="autoplay"
-                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/587725518&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-                ></iframe>
-                <div
-                  style="
-                    font-size: 10px;
-                    color: #cccccc;
-                    line-break: anywhere;
-                    word-break: normal;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-                      Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-                    font-weight: 100;
-                  "
-                >
-                  <a
-                    href="https://soundcloud.com/zehy-akuta"
-                    title="Shinozeki Nin"
-                    target="_blank"
-                    style="color: #cccccc; text-decoration: none"
-                    >Shinozeki Nin</a
-                  >
-                  ·
-                  <a
-                    href="https://soundcloud.com/zehy-akuta/check-valve"
-                    title="Check Valve"
-                    target="_blank"
-                    style="color: #cccccc; text-decoration: none"
-                    >Check Valve</a
-                  >
-                </div>
-              </div>
-
-              <div>
-                <iframe
-                  max-width="800px"
-                  height="166"
-                  scrolling="no"
-                  frameborder="no"
-                  allow="autoplay"
-                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/966745555&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-                ></iframe>
-                <div
-                  style="
-                    font-size: 10px;
-                    color: #cccccc;
-                    line-break: anywhere;
-                    word-break: normal;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-                      Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-                    font-weight: 100;
-                  "
-                >
-                  <a
-                    href="https://soundcloud.com/zehy-akuta"
-                    title="Shinozeki Nin"
-                    target="_blank"
-                    style="color: #cccccc; text-decoration: none"
-                    >Shinozeki Nin</a
-                  >
-                  ·
-                  <a
-                    href="https://soundcloud.com/zehy-akuta/tamabashi"
-                    title="Tamabashi"
-                    target="_blank"
-                    style="color: #cccccc; text-decoration: none"
-                    >Tamabashi</a
-                  >
-                </div>
-              </div>
-
-              <div>
-                <iframe
-                  max-width="800px"
-                  height="166"
-                  scrolling="no"
-                  frameborder="no"
-                  allow="autoplay"
-                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1355154601&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-                ></iframe>
-                <div
-                  style="
-                    font-size: 10px;
-                    color: #cccccc;
-                    line-break: anywhere;
-                    word-break: normal;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
-                      Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-                    font-weight: 100;
-                  "
-                >
-                  <a
-                    href="https://soundcloud.com/zehy-akuta"
-                    title="Shinozeki Nin"
-                    target="_blank"
-                    style="color: #cccccc; text-decoration: none"
-                    >Shinozeki Nin</a
-                  >
-                  ·
-                  <a
-                    href="https://soundcloud.com/zehy-akuta/frozen-insomnia"
-                    title="No.03 Frozen Insomnia"
-                    target="_blank"
-                    style="color: #cccccc; text-decoration: none"
-                    >No.03 Frozen Insomnia</a
-                  >
-                </div>
-              </div>
+          <div class="slide" data-name="works">
+            <div class="work-header">
+              <h3>Snake Tale</h3>
+              <span class="work-date">
+                2025-10-07
+                <a href="https://ldjam.com/events/ludum-dare/58/snake-tale"
+                  target="_blank">[Ludum Dare]</a>
+              </span>
+            </div>
+            <hr />
+            <div class="work-item">
+              <img src="/resources/images/still/snake-tale.png"
+                alt="Project Preview" class="image work-preview-image" />
+              <p>
+                A whimsical Snake-inspired game featuring 5 tutorial levels, 3
+                challenging levels, and 1 infinite level.
+              </p>
             </div>
 
-            <div style="flex: 5">
-              <h2>Movie</h2>
+            <div class="work-header">
+              <h2>Past Works</h2>
+            </div>
+            <hr />
+            <div class="work-item">
+              <p>
+                I'm not entirely happy with most of my past projects; they were
+                either improvisations or had flaws that I still find
+                <em>disgusting</em>. <br />
+                The ones listed below are the relics I left behind that I think
+                are acceptable.
+              </p>
+              <p style="text-align: right;">
+                -- Akuta Zehy, 2025-01
+              </p>
+            </div>
 
-              <div>
-                <iframe
-                  max-width="800px"
-                  height="166"
-                  src="https://www.youtube-nocookie.com/embed/kGqaC-HoULc?si=EHbs0JLGXbuauA2n"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
+            <div class="work-header">
+              <h3>Social Isolation Symptom【孤独症候】</h3>
+              <span class="work-date">
+                2024-07-28
+                <a href="https://www.youtube.com/watch?v=9mneu79hCc4"
+                  target="_blank">[YouTube]</a>
+                <a href="https://www.bilibili.com/video/BV1ww4m1k7o8"
+                  target="_blank">[Bilibili]</a>
+              </span>
+            </div>
+            <hr />
+            <div class="work-item">
+              <img src="/resources/images/still/segment-02.png"
+                alt="Project Preview" class="image work-preview-image" />
+              <p>
+                F sharp minor is a passionate yet very melancholic tune, <br />
+                with a sense of loneliness and world-weariness...
+              </p>
+            </div>
 
-                <iframe
-                  max-width="800px"
-                  height="166"
-                  src="https://www.youtube-nocookie.com/embed/XtnHZH--FTg?si=AJ224cZ1iuRdOpzl"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
+            <div class="work-header">
+              <h3>Lucid Dream【夢间行】</h3>
+              <span class="work-date">
+                2023-12-17
+                <a href="https://www.youtube.com/watch?v=4b6a1JVZSiY"
+                  target="_blank">[YouTube]</a>
+                <a href="https://www.bilibili.com/video/BV1u64y1j7p1"
+                  target="_blank">[Bilibili]</a>
+              </span>
+            </div>
+            <hr />
+            <div class="work-item">
+              <img src="/resources/images/still/lucid-dream.png"
+                alt="Project Preview" class="image work-preview-image" />
+              <p>
+                May the enthusiasm of the reality won't keep you from dreaming.
+                <br />
+                And I wish you a good night.
+              </p>
+            </div>
 
-                <iframe
-                  max-width="800px"
-                  height="166"
-                  src="https://www.youtube-nocookie.com/embed/9mneu79hCc4?si=p6act2QbPgZ2M_Pd"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-              </div>
+            <div class="work-header">
+              <h3>COOKIE ROMANCE☆</h3>
+              <span class="work-date">
+                2021-07-16
+                <a href="https://www.nicovideo.jp/watch/sm39042796"
+                  target="_blank">[Niconico]</a>
+                <a href="https://www.youtube.com/watch?v=01UPr2aTUyE"
+                  target="_blank">[YouTube]</a>
+              </span>
+            </div>
+            <hr />
+            <div class="work-item">
+              <img src="/resources/images/still/cookie-romance.png"
+                alt="Project Preview" class="image work-preview-image" />
+              <p>
+                When a memory finally reached its end, <br />
+                Where pain and trauma transformed into a romantic lyric...
+              </p>
+            </div>
+
+            <div class="work-header">
+              <h3>Check Valve【止回阈】</h3>
+              <span class="work-date">
+                2019-12-18
+                <a href="https://soundcloud.com/zehy-akuta/check-valve"
+                  target="_blank">[SoundCloud]</a>
+              </span>
+            </div>
+            <hr />
+            <div class="work-item">
+              <img src="/resources/images/still/check-valve.png"
+                alt="Project Preview" class="image work-preview-image" />
+              <p>
+                Papercrafts flying in the sky, <br />
+                Finally dropped through the barbed wire, <br />
+                Into the pieces. <br />
+                So the fantasies did....
+              </p>
+              <p>
+                It was when the story of my creation <em>truly</em> began.
+                <br />
+                A gift to my 18th birthday.
+              </p>
             </div>
           </div>
-        </div>
 
-        <div class="slide">
-          <h2>Other Works</h2>
-          <p>NOTHING HERE YET</p>
-        </div>
-      </div>
+          <div class="slide" data-name="others">
+            <h3>Other Sites</h3>
+            <div>
+              <div class="info">
+                <img
+                  src="/resources/svgs/xlog.svg"
+                  alt="xlog"
+                  style="background-color: aliceblue" />
+                <a href="https://akuta-zehy-8188.xlog.app/" target="_blank">
+                  xLog【Chinese】</a>
+              </div>
 
-      <div class="dot-container">
-        <span class="dot" onclick="showSlide(0)"></span>
-        <span class="dot" onclick="showSlide(1)"></span>
-        <span class="dot" onclick="showSlide(2)"></span>
-        <span class="dot" onclick="showSlide(3)"></span>
+              <!-- <div class="info">
+                <img src="/resources/svgs/pixiv.svg" alt="pixiv" />
+                <a
+                  href="https://www.pixiv.net/users/20959310/"
+                  target="_blank">My pixiv</a>
+              </div> -->
+
+              <div class="info">
+                <img
+                  src="/resources/svgs/github.svg"
+                  alt="github"
+                  style="background-color: aliceblue" />
+                <a href="https://github.com/AkutaZehy"
+                  target="_blank">GitHub</a>
+              </div>
+
+              <div class="info">
+                <img
+                  src="/resources/svgs/wordpress.svg"
+                  alt="wordpress" />
+                <a href="http://akutazehy.home.blog/"
+                  target="_blank">WordPress【Chinese】</a>
+              </div>
+
+              <div class="info">
+                <img
+                  src="/resources/svgs/bandcamp.png"
+                  alt="bandcamp" />
+                <a href="https://akutazehy.bandcamp.com"
+                  target="_blank">Bandcamp</a>
+              </div>
+            </div>
+
+            <br />
+
+            <h3>Contact Me</h3>
+            <p>
+              Email: akuta_zehy[at]outlook.com
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -363,9 +302,8 @@
       <img
         class="fullscreen-image"
         id="fullscreenImage"
-        src=""
-        alt="Fullscreen Image"
-      />
+        src
+        alt="Fullscreen Image" />
     </div>
 
     <script src="/scripts/load-fish.js"></script>

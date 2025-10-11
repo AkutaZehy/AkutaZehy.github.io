@@ -15,6 +15,11 @@
   src: url('/resources/fonts/SFMono-Regular-10.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Ark Pixel';
+  src: url('/resources/fonts/ark-pixel-12px-proportional-zh_cn.otf') format('opentype');
+}
+
 body {
   width: 100vw;
   margin: 0;
@@ -24,13 +29,18 @@ body {
   align-items: center;
   background-color: #111;
   color: #f0f0f0;
+  font-family: 'Ark Pixel', sans-serif;
 }
 
 p,
 a,
 span,
-i {
-  font-family: 'SF Mono', sans-serif;
+i,
+li,
+ul,
+button {
+  font-family: 'Ark Pixel', sans-serif;
+  /* 'SF Mono', 'OPPOSans', 'Ark Pixel', monospace; */
 }
 
 a {
@@ -42,14 +52,16 @@ a:visited {
 }
 
 h1 {
-  font-family: 'Higashi', sans-serif;
   font-size: 5em;
-  color: #f0f0f0;
   align-self: center;
 }
 
-h2 {
-  font-family: 'Higashi', sans-serif;
+
+h1,
+h2,
+h3 {
+  font-family: 'Ark Pixel', sans-serif;
+  /* 'Higashi', sans-serif; */
   color: #f0f0f0;
 }
 

@@ -2,25 +2,64 @@
 
 body {
   overflow-x: hidden;
+  background-color: #000;
+  color: #fff;
+  font-family: sans-serif;
 }
 
-p {
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#main-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+#title {
+  cursor: url("/resources/cursor/02-help-select.png"), help;
+  transition: color 0.3s ease;
+}
+
+p,
+li {
   line-height: 2rem;
 }
 
-iframe {
-  width: 90%;
+/* -------------------- 顶部菜单 (Menu) -------------------- */
+#menu-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #333;
 }
 
-.info {
-  display: flex;
-  align-items: center;
-  margin-bottom: .5rem;
+.menu-item {
+  color: #aaa;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
+
+.menu-item:hover {
+  color: #fff;
+}
+
+.active-menu-item {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+/* -------------------- 通用结构 (Slides) -------------------- */
 
 .slideshow-container {
   position: relative;
-  /* overflow: hidden; */
 }
 
 .slide {
@@ -28,6 +67,8 @@ iframe {
   width: 100%;
   min-height: 60vh;
   animation: fade 0.5s;
+  padding-bottom: 50px;
+  /* 底部留白 */
 }
 
 .active-slide {
@@ -44,46 +85,96 @@ iframe {
   }
 }
 
-.dot-container {
-  position: absolute;
-  left: 2rem;
-  top: 50%;
-  transform: translateY(-50%);
+.info {
+  display: flex;
+  align-items: center;
+  margin-bottom: .8rem;
+}
+
+.info img {
+  width: 31px;
+  height: 31px;
+  margin-right: 1rem;
+  object-fit: contain;
+}
+
+/* -------------------- SLIDE 0: ME 布局 -------------------- */
+.bio-layout {
+  display: flex;
+  gap: 20px;
+}
+
+.bio-left {
+  flex: 5;
+  min-width: 0;
+}
+
+.bio-right {
+  flex: 4;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: .5rem 0;
-  background-color: #777;
-  border-radius: 50%;
-  display: inline-block;
+.selfie-content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* -------------------- SLIDE 1: GALLERY 布局 -------------------- */
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: left;
+}
+
+.gallery-item {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top center;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
 
-.active-dot {
-  background-color: #fff;
-}
+/* -------------------- SLIDE 2: WORKS 布局 -------------------- */
+/* -------------------- SLIDE 3: OTHERS 布局 -------------------- */
 
-.container {
+.archived-media-container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.column {
-  flex: 33%;
-  max-width: 33%;
+.work-item {
+  margin-bottom: 5rem;
 }
 
-.image {
+.work-preview-image {
   width: 100%;
-  object-fit: contain;
+  max-width: 600px;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
 }
+
+/* .music-container iframe {
+  width: 100%;
+  max-width: 960px;
+  margin-bottom: 1rem;
+}
+
+.soundcloud-info {
+  font-size: 10px;
+  color: #ccc;
+  margin-bottom: 2rem;
+} */
+
+/* -------------------- 全屏视图 (Lightbox) 保持不变 -------------------- */
 
 .fullscreen-view {
   display: none;
@@ -93,7 +184,6 @@ iframe {
   width: 100%;
   height: 100%;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
   transition: background-color 300ms ease;
 }
@@ -124,11 +214,49 @@ iframe {
   cursor: pointer;
 }
 
-#title {
-  cursor: url("/resources/cursor/02-help-select.png"), help;
-  transition: color 0.3s ease;
+
+/* ==================== 响应式设计 (MEDIA QUERIES) ==================== */
+
+@media (max-width: 500px) {
+
+  #menu-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: none;
+  }
+
+  .menu-item {
+    margin: 0.5rem 0.3rem;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9em;
+  }
+
+  #main-wrapper {
+    padding: 0 0.5rem;
+  }
+
+  h1#title {
+    margin-top: 1rem;
+  }
 }
 
-#title.active {
-  color: orange;
+@media (max-width: 650px) {
+  .bio-layout {
+    flex-direction: column;
+  }
+
+  .bio-right {
+    margin-top: 2rem;
+  }
+
+  .selfie-content {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  min-height: 166px;
 }

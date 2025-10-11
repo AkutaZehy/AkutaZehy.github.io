@@ -1,88 +1,56 @@
 let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.dot');
-const title = document.getElementById('title');
+const slides = document.querySelectorAll(".slide");
+const menuItems = document.querySelectorAll(".menu-item");
 
-const onSound = new Audio('/resources/sound/sfx/pc_on.wav');
-const offSound = new Audio('/resources/sound/sfx/pc_off.wav');
+function updateMenu(index) {
+  menuItems.forEach((item) => {
+    item.classList.remove("active-menu-item");
+  });
+  menuItems[index].classList.add("active-menu-item");
+}
 
-const isNotify = false;
+function showSlide(index) {
+  if (index < 0 || index >= slides.length) return;
 
-function showSlide (index) {
-  slides[currentSlide].classList.remove('active-slide');
-  dots[currentSlide].classList.remove('active-dot');
+  slides[currentSlide].classList.remove("active-slide");
+
   currentSlide = index;
-  slides[currentSlide].classList.add('active-slide');
-  dots[currentSlide].classList.add('active-dot');
+
+  slides[currentSlide].classList.add("active-slide");
+
+  updateMenu(index);
 }
 
-function handleWheelEvent (event) {
-  const delta = Math.sign(event.deltaY);
-  const newIndex = currentSlide + delta;
-  if (newIndex >= 0 && newIndex < slides.length) {
-    showSlide(newIndex);
-  }
-}
-
-function handleNotification (message, icon) {
-  if (!isNotify) return;
-  Notification.requestPermission().then(permission => {
-    if (permission === 'granted') {
-      new Notification('Browser Notification', {
-        body: message,
-        icon: icon
-      });
-    }
-  });
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-  title.addEventListener('click', function () {
-    if (title.classList.contains('active')) {
-      title.classList.remove('active');
-      document.removeEventListener('wheel', handleWheelEvent);
-      offSound.play();
-      message = 'Wheel control has been deactivated.';
-      icon = '/resources/svgs/blue-seamless-pattern.svg';
-      handleNotification(message, icon);
-    } else {
-      title.classList.add('active');
-      document.addEventListener('wheel', handleWheelEvent);
-      onSound.play();
-      message = 'Wheel control has been activated.';
-      icon = '/resources/svgs/orange-seamless-pattern.svg';
-      handleNotification(message, icon);
-    }
-  });
-
-  const images = document.querySelectorAll('.image');
-  const fullscreenView = document.getElementById('fullscreenView');
-  const fullscreenImage = document.getElementById('fullscreenImage');
-  const closeBtn = document.getElementById('closeBtn');
-
-  images.forEach(image => {
-    image.addEventListener('click', function () {
-      fullscreenImage.src = this.src;
-      fullscreenView.classList.add('show');
-      document.removeEventListener('wheel', handleWheelEvent);
+document.addEventListener("DOMContentLoaded", function () {
+  menuItems.forEach((item) => {
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
+      const index = parseInt(this.getAttribute("data-slide"));
+      showSlide(index);
     });
   });
 
-  closeBtn.addEventListener('click', function () {
-    fullscreenView.classList.remove('show');
-    if (title.classList.contains('active')) {
-      document.addEventListener('wheel', handleWheelEvent);
-    }
+  const images = document.querySelectorAll(".image");
+  const fullscreenView = document.getElementById("fullscreenView");
+  const fullscreenImage = document.getElementById("fullscreenImage");
+  const closeBtn = document.getElementById("closeBtn");
+
+  images.forEach((image) => {
+    image.addEventListener("click", function () {
+      fullscreenImage.src = this.src;
+      fullscreenView.classList.add("show");
+    });
   });
 
-  fullscreenView.addEventListener('click', function (e) {
+  closeBtn.addEventListener("click", function () {
+    fullscreenView.classList.remove("show");
+  });
+
+  fullscreenView.addEventListener("click", function (e) {
     if (e.target === fullscreenView) {
-      fullscreenView.classList.remove('show');
-      if (title.classList.contains('active')) {
-        document.addEventListener('wheel', handleWheelEvent);
-      }
+      fullscreenView.classList.remove("show");
     }
   });
-});
 
-showSlide(0);
+  showSlide(0);
+});
