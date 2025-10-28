@@ -4,7 +4,7 @@ html {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: clip;
   background-color: #000000;
   color: #fff;
   font-family: 'Courier New', Courier, monospace;
@@ -51,10 +51,10 @@ html {
   white-space: nowrap;
   user-select: none;
   color: #fff;
-  animation: swim 30s linear infinite;
+  /* animation: swim 30s linear infinite; */
 }
 
-@keyframes swim {
+/* @keyframes swim {
   0% {
     transform: translateX(100vw);
   }
@@ -62,4 +62,4 @@ html {
   100% {
     transform: translateX(-100vw);
   }
-}
+} */
