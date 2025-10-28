@@ -171,3 +171,42 @@ svg {
 .person.is-running {
   animation: runEscape 1.5s cubic-bezier(0.5, 0, 0.75, 1) forwards;
 }
+
+/* Mobile */
+@media (max-width: 800px) {
+  .bottom-section {
+    flex-direction: column;
+  }
+
+  .area {
+    border-right: none;
+    border-bottom: 1px solid #fff;
+  }
+
+  .area:last-child {
+    border-bottom: none;
+  }
+
+  .area:hover,
+  .area.expanded {
+    flex: 1;
+  }
+
+  .area:hover~.area,
+  .area.expanded~.area {
+    flex: 1;
+  }
+
+  .title {
+    top: 35%;
+    font-size: 3.5em;
+    transform: translate(-50%, -50%);
+  }
+
+  .description {
+    top: 65%;
+    bottom: auto;
+    font-size: 1.2em;
+    transform: translate(-50%, -50%);
+  }
+}

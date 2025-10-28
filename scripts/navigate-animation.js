@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const areas = document.querySelectorAll(".area");
   const isHoverSupported = window.matchMedia("(hover: hover)").matches;
 
-  if (!isHoverSupported) {
+  if (!isHoverSupported && window.innerWidth > 800) {
     areas.forEach((area) => {
       area.addEventListener("click", function () {
         if (area.classList.contains("expanded")) {
