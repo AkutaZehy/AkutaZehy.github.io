@@ -25,11 +25,18 @@ body {
 
 .top-section {
   height: 15%;
-  border-bottom: 1px solid #fff;
+  /* border-bottom: 1px solid #fff; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding-right: 20px;
+}
+
+.top-section-mobile {
+  height: 15%;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 svg {
@@ -55,6 +62,7 @@ svg {
 }
 
 .bottom-section {
+  border-top: 1px solid #fff;
   height: 85%;
   display: flex;
 }
@@ -208,5 +216,25 @@ svg {
     bottom: auto;
     font-size: 1.2em;
     transform: translate(-50%, -50%);
+  }
+}
+
+/* Low Height Screens */
+@media (max-height: 700px) {
+  .title {
+    display: none;
+  }
+
+  .description {
+    top: 50%;
+    font-size: 1.5em;
+  }
+
+  .top-section {
+    display: none;
+  }
+
+  .top-section-mobile {
+    display: flex;
   }
 }
