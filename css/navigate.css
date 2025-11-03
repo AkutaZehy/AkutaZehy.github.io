@@ -217,6 +217,14 @@ svg {
     font-size: 1.2em;
     transform: translate(-50%, -50%);
   }
+
+  .top-section {
+    display: none;
+  }
+
+  .top-section-mobile {
+    display: flex;
+  }
 }
 
 /* Low Height Screens */
@@ -228,13 +236,5 @@ svg {
   .description {
     top: 50%;
     font-size: 1.5em;
-  }
-
-  .top-section {
-    display: none;
-  }
-
-  .top-section-mobile {
-    display: flex;
   }
 }
