@@ -4,7 +4,7 @@
   "html.format.indentHandlebars": true,
   "html.format.indentInnerHtml": false,
   "editor.acceptSuggestionOnEnter": "smart",
-  "editor.tabCompletion": "off",
+  "editor.tabCompletion": "onlySnippets",
   "editor.stickyTabStops": false,
   "html.format.wrapAttributes": "aligned-multiple",
   "html.format.unformatted": "wbr",
