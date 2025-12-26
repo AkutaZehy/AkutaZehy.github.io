@@ -1,0 +1,170 @@
+[
+  {
+    "type": "friends",
+    "hasFavicon": true,
+    "isOneWay": false,
+    "image": "/resources/favicons/lachrymal.gif",
+    "description": "",
+    "name": "Lachrymal",
+    "url": "https://lachrymal.net/"
+  },
+  {
+    "type": "friends",
+    "hasFavicon": false,
+    "isOneWay": false,
+    "image": "/resources/favicons/aira.png",
+    "description": "",
+    "name": "Aira",
+    "url": "https://aira.cafe/"
+  },
+  {
+    "type": "friends",
+    "hasFavicon": true,
+    "isOneWay": false,
+    "image": "/resources/favicons/alivemaster.png",
+    "description": "A resource site.",
+    "name": "alivemaster",
+    "url": "https://yasunaori.be/"
+  },
+  {
+    "type": "friends",
+    "hasFavicon": false,
+    "isOneWay": false,
+    "image": "",
+    "description": "",
+    "name": "hakadao",
+    "url": "https://hakadao.cc"
+  },
+  {
+    "type": "friends",
+    "hasFavicon": true,
+    "isOneWay": false,
+    "image": "https://peppersalt.neocities.org/buttons/PepperSaltedButton.gif",
+    "description": "",
+    "name": "peppersalt",
+    "url": "https://peppersalt.neocities.org/"
+  },
+  {
+    "type": "friends",
+    "hasFavicon": false,
+    "isOneWay": false,
+    "image": "",
+    "description": "",
+    "name": "Cosmo / bablfishes",
+    "url": "https://bablfishes.nekoweb.org/"
+  },
+  {
+    "type": "friends",
+    "hasFavicon": false,
+    "isOneWay": false,
+    "image": "",
+    "description": "",
+    "name": "レグ",
+    "url": "https://zunda.us.kg/"
+  },
+  {
+    "type": "friends",
+    "hasFavicon": false,
+    "isOneWay": false,
+    "image": "/resources/favicons/megakite.png",
+    "description": "",
+    "name": "megakite",
+    "url": "https://megakite.icu/"
+  },
+  {
+    "type": "friends",
+    "hasFavicon": false,
+    "isOneWay": false,
+    "image": "",
+    "description": "",
+    "name": "菜鸡",
+    "url": "https://www.yatori.fun/"
+  },
+  {
+    "type": "friends",
+    "hasFavicon": false,
+    "isOneWay": false,
+    "image": "/resources/favicons/wzq02.png",
+    "description": "",
+    "name": "WZQ02",
+    "url": "https://wzq02.top/"
+  },
+  {
+    "type": "friends",
+    "hasFavicon": false,
+    "isOneWay": false,
+    "image": "",
+    "description": "",
+    "name": "KumaKorin",
+    "url": "https://korin.im/"
+  },
+  {
+    "type": "friends",
+    "hasFavicon": true,
+    "isOneWay": false,
+    "image": "/resources/favicons/kapu.gif",
+    "description": "",
+    "name": "Kapunium",
+    "url": "https://kapu.nekoweb.org/"
+  },
+  {
+    "type": "friends",
+    "hasFavicon": true,
+    "isOneWay": false,
+    "image": "/resources/favicons/akutazehy.png",
+    "description": "ME",
+    "name": "AkutaZehy",
+    "url": "https://akutazehy.github.io/"
+  },
+  {
+    "type": "friends",
+    "hasFavicon": false,
+    "isOneWay": true,
+    "image": "",
+    "description": "",
+    "name": "Lil Hyvää",
+    "url": "https://potofu.me/lilhyvaa"
+  },
+  {
+    "type": "friends",
+    "hasFavicon": false,
+    "isOneWay": true,
+    "image": "/resources/favicons/xxhyz.png",
+    "description": "",
+    "name": "XXHYZ",
+    "url": "https://xxhyz.net/"
+  },
+  {
+    "type": "friends",
+    "hasFavicon": false,
+    "isOneWay": true,
+    "image": "",
+    "description": "",
+    "name": "中絲悠",
+    "url": "https://yunakaito.com/"
+  },
+  {
+    "type": "sites",
+    "description": "Resource Site of Shimeji Simulation (Chinese)",
+    "name": "西よもぎ",
+    "url": "http://westyomogi.xyz/"
+  },
+  {
+    "type": "sites",
+    "description": "Resource Site of Tsukumizu",
+    "name": "穴堀り部",
+    "url": "https://holedigging.club/"
+  },
+  {
+    "type": "sites",
+    "description": "Resource Site of Yume Nikki",
+    "name": "ゆめにっき",
+    "url": "https://yumenikki.info/"
+  },
+  {
+    "type": "sites",
+    "description": "A booklist from game \"Alter Ego\"",
+    "name": "Alter Ego",
+    "url": "https://www.alterego.caracolu.com/jp/references.html"
+  }
+]

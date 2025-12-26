@@ -5,332 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LINKS</title>
     <link rel="stylesheet" href="/css/styles.css" />
-    <style>
-      body {
-        width: 100vw;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-      }
-
-      #container {
-        width: 60vw;
-      }
-
-      .favicon {
-        width: auto;
-        height: 31px;
-      }
-
-      table {
-        background-color: aliceblue;
-        border: 1px solid black;
-      }
-
-      tr {
-        color: #fff;
-        background-color: blue;
-        border: 1px solid black;
-      }
-
-      tr:hover {
-        color: slateblue;
-        background-color: tomato;
-        border: 1px solid black;
-        cursor: url("/resources/cursor/15-link-select.png"), pointer;
-      }
-
-      td {
-        background-color: inherit;
-        border: 1px solid black;
-        text-align: center;
-        color: inherit;
-        padding: 5px;
-        cursor: inherit;
-      }
-
-      button {
-        border: 1px solid #fff;
-        height: 31px;
-        width: 95px;
-        background-color: blue;
-        border: 1px solid black;
-        color: #fff;
-        cursor: url("/resources/cursor/15-link-select.png"), pointer;
-        padding: 5px;
-        align-self: center;
-        animation: blink 3s infinite;
-      }
-
-      @keyframes blink {
-        0%,
-        100% {
-          opacity: 1;
-        }
-
-        50% {
-          opacity: 0;
-        }
-      }
-
-      footer {
-        margin-top: 2rem;
-        text-align: center;
-        color: #fff;
-        background-color: blue;
-        border: 1px solid black;
-        padding: 5px;
-      }
-    </style>
+    <link rel="stylesheet" href="/css/friends.css" />
   </head>
 
   <body>
     <div id="container">
       <div id="fish-navigate"></div>
 
-      <h1>LINKS</h1>
-
-      <div style="flex-direction: row; align-self: center">
-        <button onclick="randomSite()" id="ad">RANDOM</button>
-        <button onclick="closeAd()" id="closer" style="animation: none">
-          CLOSE IT
-        </button>
+    <div class="desktop">
+      <div class="folder" data-folder="favicon-wall">
+        <div class="folder-icon"></div>
+        <div class="folder-label">Favicon Wall</div>
       </div>
 
-      <h2>Friends with backlinks</h2>
-      <table>
-        <colgroup>
-          <col style="width: 70vw" />
-          <col style="width: 30vw" />
-        </colgroup>
-        <tbody>
-          <thead>
-            <tr
-              style="
-                background-color: blue;
-                border: 1px solid black;
-                color: #fff;
-              "
-            >
-              <td>ADDRESS</td>
-              <td>FAVICON</td>
-            </tr>
-          </thead>
-          <tr data-link="https://lachrymal.net/">
-            <td>Lachrymal</td>
-            <td>
-              <img
-                src="/resources/favicons/lachrymal.gif"
-                alt="Lachrymal"
-                class="favicon"
-              />
-            </td>
-          </tr>
-          <tr data-link="https://aira.cafe/">
-            <td>Aira</td>
-            <td>
-              <img
-                src="/resources/favicons/aira.png"
-                alt="Aira"
-                class="favicon"
-              />
-            </td>
-          </tr>
-          <tr
-            data-link="https://yasunaori.be/"
-            style="cursor: url('/resources/cursor/02-help-select.png'), help"
-            title="这是一个资源站"
-          >
-            <td>alivemaster</td>
-            <td>
-              <img
-                src="/resources/favicons/alivemaster.png"
-                alt="alivemaster"
-                class="favicon"
-              />
-            </td>
-          </tr>
-          <tr data-link="https://hakadao.cc">
-            <td>hakadao</td>
-            <td>---</td>
-          </tr>
-          <tr data-link="https://peppersalt.neocities.org/">
-            <td>peppersalt</td>
-            <td>
-              <img
-                src="https://peppersalt.neocities.org/buttons/PepperSaltedButton.gif"
-                style="max-width: 100%; image-rendering: pixelated"
-              />
-            </td>
-          </tr>
-          <tr data-link="https://bablfishes.nekoweb.org/">
-            <td>Cosmo / bablfishes</td>
-            <td>---</td>
-          </tr>
-          <tr data-link="https://zunda.us.kg/">
-            <td>レグ</td>
-            <td>---</td>
-          </tr>
-          <tr data-link="https://megakite.icu/">
-            <td>megakite</td>
-            <td>
-              <img
-                src="/resources/favicons/megakite.png"
-                alt="megakite"
-                class="favicon"
-              />
-            </td>
-          </tr>
-          <tr data-link="https://www.yatori.fun/">
-            <td>菜鸡</td>
-            <td>---</td>
-          </tr>
-          <tr data-link="https://wzq02.top/">
-            <td>WZQ02</td>
-            <td>
-              <img
-                src="/resources/favicons/wzq02.png"
-                alt="WZQ02"
-                class="favicon"
-              />
-            </td>
-          </tr>
-          <tr data-link="https://korin.im/">
-            <td>KumaKorin</td>
-            <td>---</td>
-          </tr>
-          <tr data-link="https://kapu.nekoweb.org/">
-            <td>Kapunium</td>
-            <td>
-              <img
-                src="/resources/favicons/kapu.gif"
-                alt="Kapunium"
-                class="favicon"
-              />
-            </td>
-          </tr>
-          <!-- <tr data-link="https://akutazehy.github.io/moon/"> -->
-          <tr data-link="https://akutazehy.github.io/">
-            <td>AkutaZehy（ME）</td>
-            <td>
-              <img
-                src="/resources/favicons/akutazehy.png"
-                alt="Akutazehy"
-                class="favicon"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br />
+      <div class="folder" data-folder="friends-backlinks">
+        <div class="folder-icon"></div>
+        <div class="folder-label">Friends with backlinks</div>
+      </div>
 
-      <h2>One-way to people I know</h2>
-      <table>
-        <colgroup>
-          <col style="width: 70vw" />
-          <col style="width: 30vw" />
-        </colgroup>
-        <tbody>
-          <thead>
-            <tr
-              style="
-                background-color: blue;
-                border: 1px solid black;
-                color: #fff;
-              "
-            >
-              <td>ADDRESS</td>
-              <td>FAVICON</td>
-            </tr>
-          </thead>
-          <tr data-link="https://potofu.me/lilhyvaa">
-            <td>Lil Hyvää</td>
-            <td>---</td>
-          </tr>
-          <tr data-link="https://xxhyz.net/">
-            <td>XXHYZ</td>
-            <td>
-              <img
-                src="/resources/favicons/xxhyz.png"
-                alt="XXHYZ"
-                class="favicon"
-              />
-            </td>
-          </tr>
-          <tr data-link="https://yunakaito.com/">
-            <td>中絲悠</td>
-            <td>---</td>
-          </tr>
-        </tbody>
-      </table>
-      <br />
+      <div class="folder" data-folder="one-way">
+        <div class="folder-icon"></div>
+        <div class="folder-label">One-way to people I know</div>
+      </div>
 
-      <h2>Others</h2>
-      <table>
-        <colgroup>
-          <col style="width: 30vw" />
-          <col style="width: 70vw" />
-        </colgroup>
-        <tbody>
-          <thead>
-            <tr
-              style="
-                background-color: blue;
-                border: 1px solid black;
-                color: #fff;
-              "
-            >
-              <td>SITE</td>
-              <td>BRIEF</td>
-            </tr>
-          </thead>
-          <tr data-link="http://westyomogi.xyz/">
-            <td>西よもぎ</td>
-            <td>Resource Site of Shimeji Simulation (Chinese)</td>
-          </tr>
-          <tr data-link="https://holedigging.club/">
-            <td>穴堀り部</td>
-            <td>Resource Site of Tsukumizu</td>
-          </tr>
-          <tr data-link="https://yumenikki.info/">
-            <td>ゆめにっき</td>
-            <td>Resource Site of Yume Nikki</td>
-          </tr>
-          <tr data-link="https://www.alterego.caracolu.com/jp/references.html">
-            <td>Alter Ego</td>
-            <td>A booklist from game “Alter Ego”</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="folder" data-folder="others">
+        <div class="folder-icon"></div>
+        <div class="folder-label">Others</div>
+      </div>
 
-      <footer>Here's the buttom of the page.</footer>
+      <div id="dvd-popup" class="dvd-popup">
+        <div class="popup-content">
+          <span class="popup-text">A RANDOM SERVICE!</span>
+          <button class="popup-close">×</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="window" id="favicon-wall-window">
+      <div class="window-header">
+        <div class="window-title">Favicon Wall</div>
+        <div class="window-controls">
+          <div class="window-control minimize">_</div>
+          <div class="window-control maximize">□</div>
+          <div class="window-control close">×</div>
+        </div>
+      </div>
+      <div class="window-content">
+        <div class="favicon-grid" id="favicon-wall-content">
+        </div>
+      </div>
+    </div>
+
+    <div class="window" id="friends-backlinks-window">
+      <div class="window-header">
+        <div class="window-title">Friends with backlinks</div>
+        <div class="window-controls">
+          <div class="window-control minimize">_</div>
+          <div class="window-control maximize">□</div>
+          <div class="window-control close">×</div>
+        </div>
+      </div>
+      <div class="window-content">
+        <div class="favicon-grid" id="friends-backlinks-content">
+        </div>
+      </div>
+    </div>
+
+    <div class="window" id="one-way-window">
+      <div class="window-header">
+        <div class="window-title">One-way to people I know</div>
+        <div class="window-controls">
+          <div class="window-control minimize">_</div>
+          <div class="window-control maximize">□</div>
+          <div class="window-control close">×</div>
+        </div>
+      </div>
+      <div class="window-content">
+        <div class="favicon-grid" id="one-way-content">
+        </div>
+      </div>
+    </div>
+
+    <div class="window" id="others-window">
+      <div class="window-header">
+        <div class="window-title">Others</div>
+        <div class="window-controls">
+          <div class="window-control minimize">_</div>
+          <div class="window-control maximize">□</div>
+          <div class="window-control close">×</div>
+        </div>
+      </div>
+      <div class="window-content browser-style" id="others-content">
+      </div>
     </div>
     <script src="/scripts/load-fish.js"></script>
-    <script>
-      const rows = document.querySelectorAll("tr");
-      rows.forEach((row) => {
-        row.addEventListener("click", () => {
-          const link = row.getAttribute("data-link");
-          if (link) {
-            window.open(link, "_blank");
-          }
-        });
-      });
-
-      function randomSite() {
-        const links = document.querySelectorAll("tr");
-        const random = Math.floor(Math.random() * links.length);
-        const link = links[random].getAttribute("data-link");
-        if (link) {
-          window.open(link, "_blank");
-        }
-      }
-
-      function closeAd() {
-        document.getElementById("ad").style.display = "none";
-        document.getElementById("closer").style.display = "none";
-      }
-    </script>
+    <script src="/scripts/friends.js"></script>
   </body>
 </html>
