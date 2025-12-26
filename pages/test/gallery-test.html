@@ -5,6 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallary Test</title>
     <link rel="stylesheet" href="/css/info.css" />
+    <style>
+      .hint {
+        text-align: center;
+        color: #888;
+        margin-bottom: 2rem;
+      }
+
+      .gallery-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .gallery-row {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: top center;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .image:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      }
+
+      @media (max-width: 900px) {
+        .image {
+          width: 150px;
+          height: 150px;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .image {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="container">
@@ -15,81 +67,72 @@
           class="spin-fish"
         />
       </a>
+
       <h1 id="title" title="experimental: toggle wheel">画廊测试</h1>
-      <p>请尝试单击图片，确认全屏预览是否正常工作。</p>
+      <p class="hint">请尝试单击图片，确认全屏预览是否正常工作。</p>
 
-      <div class="slideshow-container">
-        <div class="slide">
-          <h2>Gallary</h2>
-          <div class="container">
-            <div class="column">
-              <img
-                src="/resources/images/still/cry-for-the-moon.png"
-                alt="cry-for-the-moon"
-                class="image"
-              />
-              <img
-                src="/resources/images/still/practice-01.png"
-                alt="practice-01"
-                class="image"
-              />
-
-              <img
-                src="/resources/images/still/doodle-01.png"
-                alt="doodle-01"
-                class="image"
-              />
-              <img
-                src="/resources/images/still/yume-nikki-20th.png"
-                alt="yume-nikki-20th"
-                class="image"
-              />
-            </div>
-            <div class="column">
-              <img
-                src="/resources/images/still/doodle-02.png"
-                alt="doodle02"
-                class="image"
-              />
-              <img
-                src="/resources/images/still/birthday-24-01.png"
-                alt="birthday-24-01"
-                class="image"
-              />
-              <img
-                src="/resources/images/still/zero-collab-24.png"
-                alt="zero-collab-24"
-                class="image"
-              />
-              <img
-                src="/resources/images/still/kigurumi.png"
-                alt="kigurumi"
-                class="image"
-              />
-            </div>
-            <div class="column">
-              <img
-                src="/resources/images/still/segment-02.png"
-                alt="segment-02"
-                class="image"
-              />
-              <img
-                src="/resources/images/still/birthday-24-04.png"
-                alt="birthday-24-04"
-                class="image"
-              />
-              <img
-                src="/resources/images/still/birthday-24-09.png"
-                alt="birthday-24-09"
-                class="image"
-              />
-            </div>
-          </div>
+      <div class="gallery-container">
+        <div class="gallery-row">
+          <img
+            src="/resources/images/still/cry-for-the-moon.png"
+            alt="cry-for-the-moon"
+            class="image"
+          />
+          <img
+            src="/resources/images/still/practice-01.png"
+            alt="practice-01"
+            class="image"
+          />
+          <img
+            src="/resources/images/still/doodle-01.png"
+            alt="doodle-01"
+            class="image"
+          />
+          <img
+            src="/resources/images/still/yume-nikki-20th.png"
+            alt="yume-nikki-20th"
+            class="image"
+          />
         </div>
-      </div>
-
-      <div class="dot-container">
-        <span class="dot" onclick="showSlide(0)"></span>
+        <div class="gallery-row">
+          <img
+            src="/resources/images/still/doodle-02.png"
+            alt="doodle02"
+            class="image"
+          />
+          <img
+            src="/resources/images/still/birthday-24-01.png"
+            alt="birthday-24-01"
+            class="image"
+          />
+          <img
+            src="/resources/images/still/zero-collab-24.png"
+            alt="zero-collab-24"
+            class="image"
+          />
+          <img
+            src="/resources/images/still/kigurumi.png"
+            alt="kigurumi"
+            class="image"
+          />
+        </div>
+        <div class="gallery-row">
+          <img
+            src="/resources/images/still/segment-02.png"
+            alt="segment-02"
+            class="image"
+          />
+          <img
+            src="/resources/images/still/birthday-24-04.png"
+            alt="birthday-24-04"
+            class="image"
+          />
+          <img
+            src="/resources/images/still/birthday-24-09.png"
+            alt="birthday-24-09"
+            class="image"
+          />
+        </div>
       </div>
     </div>
 

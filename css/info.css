@@ -141,6 +141,20 @@ li {
   cursor: pointer;
 }
 
+@media (max-width: 900px) {
+  .gallery-item {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery-item {
+    width: 120px;
+    height: 120px;
+  }
+}
+
 /* -------------------- SLIDE 2: WORKS 布局 -------------------- */
 /* -------------------- SLIDE 3: OTHERS 布局 -------------------- */
 
