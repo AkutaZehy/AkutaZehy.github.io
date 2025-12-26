@@ -621,9 +621,211 @@ function initDvdPopup() {
   animateDvd();
 }
 
+// 移动端菜单功能
+function initMobileMenu() {
+  const menuBtn = document.getElementById("mobile-menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const closeBtn = document.getElementById("mobile-content-close");
+
+  if (!menuBtn || !mobileMenu) return;
+
+  // 打开菜单
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.add("active");
+  });
+
+  // 点击文件夹打开内容
+  mobileMenu.querySelectorAll(".mobile-folder").forEach((folder) => {
+    folder.addEventListener("click", () => {
+      const folderId = folder.getAttribute("data-folder");
+      openMobileContent(folderId);
+      mobileMenu.classList.remove("active");
+    });
+  });
+
+  // 关闭内容容器
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      const container = document.getElementById("mobile-content-container");
+      if (container) {
+        container.classList.remove("active");
+        closeBtn.style.display = "none";
+      }
+    });
+  }
+}
+
+function openMobileContent(folderId) {
+  const container = document.getElementById("mobile-content-container");
+  const body = document.getElementById("mobile-content-body");
+  const title = document.getElementById("mobile-content-title");
+  const closeBtn = document.getElementById("mobile-content-close");
+
+  if (!container || !body || !title || !closeBtn) return;
+
+  // 设置标题
+  const titles = {
+    "favicon-wall": "Favicon Wall",
+    "friends-backlinks": "Friends with backlinks",
+    "one-way": "One-way to people I know",
+    "others": "Others"
+  };
+  title.textContent = titles[folderId] || folderId;
+
+  // 清空内容
+  body.innerHTML = "";
+  body.className = "mobile-content-body";
+
+  // 根据类型渲染内容
+  if (!linksData) {
+    body.innerHTML = '<div class="mobile-placeholder"><p>Loading...</p></div>';
+    container.classList.add("active");
+    closeBtn.style.display = "flex";
+    return;
+  }
+
+  switch (folderId) {
+    case "favicon-wall":
+      renderMobileFaviconGrid(body, linksData.filter(item => item.type === "friends" && item.hasFavicon));
+      break;
+    case "friends-backlinks":
+      renderMobileFaviconGrid(body, linksData.filter(item => item.type === "friends" && !item.isOneWay));
+      break;
+    case "one-way":
+      renderMobileFaviconGrid(body, linksData.filter(item => item.type === "friends" && item.isOneWay));
+      break;
+    case "others":
+      renderMobileBrowser(body, linksData.filter(item => item.type === "sites"));
+      break;
+  }
+
+  // 显示容器和关闭按钮
+  container.classList.add("active");
+  closeBtn.style.display = "flex";
+}
+
+function renderMobileFaviconGrid(container, items) {
+  if (items.length === 0) {
+    container.innerHTML = '<div class="mobile-placeholder"><p>No items</p></div>';
+    return;
+  }
+
+  const grid = document.createElement("div");
+  grid.className = "favicon-grid";
+
+  items.forEach((item) => {
+    const div = document.createElement("div");
+    div.className = "favicon-item tooltip";
+    div.setAttribute("data-link", item.url);
+
+    if (item.description) {
+      const tooltipText = document.createElement("span");
+      tooltipText.className = "tooltiptext";
+      tooltipText.textContent = item.description;
+      div.appendChild(tooltipText);
+    }
+
+    if (item.hasFavicon === true || (item.image && item.image.trim() !== "")) {
+      const img = document.createElement("img");
+      img.src = item.image;
+      img.alt = item.name;
+      div.appendChild(img);
+    } else {
+      const noFavicon = document.createElement("div");
+      noFavicon.className = "no-favicon";
+      noFavicon.textContent = "No Image";
+      div.appendChild(noFavicon);
+    }
+
+    const span = document.createElement("span");
+    span.textContent = item.name;
+    div.appendChild(span);
+
+    // 点击事件
+    div.addEventListener("click", () => {
+      if (item.url) {
+        window.open(item.url, "_blank");
+      }
+    });
+
+    grid.appendChild(div);
+  });
+
+  container.appendChild(grid);
+}
+
+function renderMobileBrowser(container, items) {
+  if (items.length === 0) {
+    container.innerHTML = '<div class="mobile-placeholder"><p>No items</p></div>';
+    return;
+  }
+
+  container.classList.add("browser-style");
+
+  // 地址栏
+  const addressBar = document.createElement("div");
+  addressBar.className = "browser-header";
+  addressBar.innerHTML = `
+    <div class="browser-address-bar">file://usr/documents/friends/other_pages/</div>
+    <div class="browser-controls">
+      <div class="browser-button">Refresh</div>
+    </div>
+  `;
+
+  // 刷新按钮功能
+  addressBar.querySelector(".browser-button").addEventListener("click", () => {
+    const folderId = document.getElementById("mobile-content-title").textContent;
+    const ids = {
+      "Favicon Wall": "favicon-wall",
+      "Friends with backlinks": "friends-backlinks",
+      "One-way to people I know": "one-way",
+      "Others": "others"
+    };
+    openMobileContent(ids[folderId] || "others");
+  });
+
+  // 内容区域
+  const content = document.createElement("div");
+  content.className = "browser-content";
+
+  items.forEach((item) => {
+    const linkContainer = document.createElement("div");
+    linkContainer.className = "browser-link-container";
+
+    const link = document.createElement("a");
+    link.className = "browser-link";
+    link.href = item.url;
+    link.target = "_blank";
+    link.textContent = item.name;
+
+    if (item.description) {
+      const tooltipWrapper = document.createElement("div");
+      tooltipWrapper.className = "tooltip";
+      tooltipWrapper.style.display = "inline-block";
+      tooltipWrapper.style.position = "relative";
+
+      const tooltipText = document.createElement("span");
+      tooltipText.className = "tooltiptext";
+      tooltipText.textContent = item.description;
+      tooltipWrapper.appendChild(tooltipText);
+      tooltipWrapper.appendChild(link);
+
+      linkContainer.appendChild(tooltipWrapper);
+    } else {
+      linkContainer.appendChild(link);
+    }
+
+    content.appendChild(linkContainer);
+  });
+
+  container.appendChild(addressBar);
+  container.appendChild(content);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initWindows();
   initInteractions();
   initDvdPopup();
+  initMobileMenu(); // 初始化移动端菜单
   loadData();
 });

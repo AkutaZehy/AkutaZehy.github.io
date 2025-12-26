@@ -9,6 +9,55 @@
   </head>
 
   <body>
+    <!-- 移动端导航 -->
+    <div class="mobile-nav">
+      <button class="mobile-menu-toggle" id="mobile-menu-btn">
+        <span class="menu-icon">☰</span>
+        <span class="menu-text">MENU</span>
+      </button>
+    </div>
+
+    <!-- 移动端菜单 -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-back-button">
+        <a href="/pages/navigate.html">
+          <img src="/resources/images/moving/fish-spin.gif" alt="Back" class="back-fish" />
+          <span>Back to Navigate</span>
+        </a>
+      </div>
+      <div class="mobile-folder-list">
+        <div class="mobile-folder" data-folder="favicon-wall">
+          <span class="mobile-folder-icon">📁</span>
+          <span class="mobile-folder-label">Favicon Wall</span>
+        </div>
+        <div class="mobile-folder" data-folder="friends-backlinks">
+          <span class="mobile-folder-icon">📁</span>
+          <span class="mobile-folder-label">Friends with backlinks</span>
+        </div>
+        <div class="mobile-folder" data-folder="one-way">
+          <span class="mobile-folder-icon">📁</span>
+          <span class="mobile-folder-label">One-way to people I know</span>
+        </div>
+        <div class="mobile-folder" data-folder="others">
+          <span class="mobile-folder-icon">📁</span>
+          <span class="mobile-folder-label">Others</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 移动端内容容器 -->
+    <div class="mobile-content-container" id="mobile-content-container">
+      <div class="mobile-content-header">
+        <span class="mobile-content-title" id="mobile-content-title">Select a folder</span>
+        <button class="mobile-content-close" id="mobile-content-close" style="display: none;">×</button>
+      </div>
+      <div class="mobile-content-body" id="mobile-content-body">
+        <div class="mobile-placeholder">
+          <p>Tap the menu button (☰) to select a folder</p>
+        </div>
+      </div>
+    </div>
+
     <div id="container">
       <div id="fish-navigate"></div>
 
