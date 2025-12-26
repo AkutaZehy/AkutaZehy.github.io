@@ -1,0 +1,398 @@
+/*    移动端样式（包括平板）
+   ======================================== */
+
+/* PC端（大屏幕）隐藏移动端导航菜单和内容容器 */
+@media (min-width: 1025px) {
+  .mobile-nav,
+  .mobile-menu,
+  .mobile-content-container {
+    display: none !important;
+  }
+}
+
+/* 平板和手机端样式优化 */
+@media (max-width: 1024px) {
+  /* 确保手机端导航菜单只在手机设备上显示 */
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 128, 128, 0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    display: block;
+    padding: 8px 15px;
+    box-sizing: border-box;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+
+  .mobile-menu-toggle:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+  .menu-icon {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+
+  .menu-text {
+    font-size: 16px;
+  }
+
+  /* 隐藏桌面端内容 */
+  .desktop {
+    display: none !important;
+  }
+
+  .window {
+    display: none !important;
+  }
+
+  /* 隐藏不需要的元素 */
+  #fish-navigate,
+  .dvd-popup {
+    display: none !important;
+  }
+
+  /* 移动端菜单 - 从顶部滑下 */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 128, 128, 0.98) 0%, rgba(0, 100, 100, 0.98) 100%);
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 2000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+  }
+
+  .mobile-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .mobile-back-button {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-back-button a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .back-fish {
+    height: 32px;
+    width: auto;
+    margin-right: 12px;
+  }
+
+  .mobile-folder-list {
+    padding: 10px 0;
+  }
+
+  .mobile-folder {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .mobile-folder:hover,
+  .mobile-folder:active {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .mobile-folder-icon {
+    font-size: 28px;
+    margin-right: 15px;
+  }
+
+  .mobile-folder-label {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  /* 移动端内容容器 - 模拟窗口 */
+  .mobile-content-container {
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    right: 10px;
+    bottom: 20px;
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    display: none;
+    flex-direction: column;
+    z-index: 100;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .mobile-content-container.active {
+    display: flex;
+  }
+
+  .mobile-content-header {
+    background: linear-gradient(to right, #000080, #1084d0);
+    color: white;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+    min-height: 36px;
+  }
+
+  .mobile-content-title {
+    font-size: 14px;
+    font-weight: bold;
+    flex: 1;
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .mobile-content-close {
+    width: 24px;
+    height: 24px;
+    background: #c0c0c0;
+    border: 1px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+
+  .mobile-content-close:hover {
+    background: #ff0000;
+    color: white;
+  }
+
+  .mobile-content-body {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    overflow: auto;
+    position: relative;
+  }
+
+  .mobile-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #808080;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* 移动端 favicon 网格 */
+  .mobile-content-body .favicon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .mobile-content-body .favicon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+
+  .mobile-content-body .favicon-item:hover,
+  .mobile-content-body .favicon-item:active {
+    background: #f0f0f0;
+  }
+
+  .mobile-content-body .favicon-item img {
+    height: 36px;
+    margin-bottom: 8px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .mobile-content-body .favicon-item span {
+    text-align: center;
+    font-size: 13px;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+
+  /* 移动端提示框 */
+  .tooltip .tooltiptext {
+    font-size: 12px;
+    max-width: 200px;
+    padding: 8px;
+  }
+
+  /* 移动端浏览器样式 */
+  .mobile-content-body.browser-style {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-content-body .browser-header {
+    background: linear-gradient(to right, #000080, #1084d0);
+    color: black;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    border-bottom: 1px solid #c0c0c0;
+  }
+
+  .mobile-content-body .browser-address-bar {
+    background-color: #ffffff;
+    border: 1px solid #808080;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    padding: 4px 8px;
+    margin-right: 8px;
+    flex-grow: 1;
+    font-size: 12px;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .mobile-content-body .browser-controls {
+    display: flex;
+    gap: 5px;
+  }
+
+  .mobile-content-body .browser-button {
+    background-color: #c0c0c0;
+    border: 1px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    padding: 4px 10px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .mobile-content-body .browser-content {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+    flex-grow: 1;
+    overflow: auto;
+  }
+
+  .mobile-content-body .browser-link-container {
+    margin-bottom: 12px;
+  }
+
+  .mobile-content-body .browser-link {
+    display: inline-block;
+    color: #0000ff;
+    text-decoration: underline;
+    font-size: 15px;
+    padding: 4px 0;
+  }
+
+  /* 移动端 no-favicon 占位符 */
+  .mobile-content-body .no-favicon {
+    width: 48px;
+    height: 48px;
+    background-color: #e0e0e0;
+    border: 1px solid #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #808080;
+    margin-bottom: 8px;
+  }
+}
+
+/* 平板端样式 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .desktop {
+    padding: 15px;
+  }
+
+  .folder {
+    width: 90px;
+    height: 90px;
+    margin: 12px;
+  }
+
+  .folder-icon {
+    width: 42px;
+    height: 36px;
+    background-size: contain;
+  }
+
+  .folder-label {
+    font-size: 13px;
+  }
+
+  .window {
+    min-width: 85%;
+    min-height: 75%;
+  }
+
+  .favicon-grid {
+    gap: 18px;
+  }
+
+  .favicon-item {
+    width: 80px;
+  }
+
+  .favicon-item img {
+    height: 36px;
+  }
+
+  .favicon-item span {
+    font-size: 13px;
+  }
+}

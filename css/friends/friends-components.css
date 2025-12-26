@@ -1,0 +1,181 @@
+table {
+  background-color: aliceblue;
+  border: 1px solid black;
+}
+
+tr {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid black;
+}
+
+tr:hover {
+  color: #000000;
+  background-color: #e0e0e0;
+  border: 1px solid black;
+  cursor: url("/resources/cursor/15-link-select.png"), pointer;
+}
+
+td {
+  background-color: inherit;
+  border: 1px solid black;
+  text-align: center;
+  color: inherit;
+  padding: 5px;
+  cursor: inherit;
+}
+
+button {
+  border: 1px solid #fff;
+  height: 31px;
+  width: 95px;
+  background-color: blue;
+  border: 1px solid black;
+  color: #fff;
+  cursor: url("/resources/cursor/15-link-select.png"), pointer;
+  padding: 5px;
+  align-self: center;
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #fff;
+  background-color: blue;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.dvd-popup {
+  position: fixed;
+  width: 200px;
+  height: 50px;
+  z-index: 9999;
+  cursor: url("/resources/cursor/15-link-select.png"), pointer;
+}
+
+.popup-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #0000ff;
+  border: 2px solid #ff00ff;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.popup-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ff00ff;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 20px;
+  text-align: center;
+  padding: 0;
+}
+
+.confirm-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: #0000ff;
+  border: 2px solid #ff00ff;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  text-align: center;
+}
+
+.confirm-dialog h3 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.confirm-dialog-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.confirm-dialog button {
+  background-color: #ff00ff;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.confirm-dialog button:hover {
+  background-color: #ffff00;
+}
+
+.favicon-pool {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.favicon-link {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.favicon-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.favicon-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.favicon-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+  pointer-events: none;
+  margin-bottom: 5px;
+}
+
+.favicon-link:hover .favicon-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ========================================
