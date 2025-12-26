@@ -55,17 +55,59 @@ const ContentRenderer = {
     addressBar.innerHTML = `
       <div class="browser-address-bar">file://usr/documents/friends/other_pages/</div>
       <div class="browser-controls">
-        <div class="browser-button">Refresh</div>
+        <div class="browser-button" id="others-refresh-btn">Refresh</div>
       </div>
     `;
 
     // 内容区
     const content = document.createElement("div");
     content.className = "browser-content";
+    content.id = "others-browser-content";
     items.forEach(item => content.appendChild(this.createBrowserLink(item)));
 
     container.appendChild(addressBar);
     container.appendChild(content);
+
+    // 添加刷新功能
+    this.initOthersRefresh(content, items);
+  },
+
+  initOthersRefresh(contentElement, items) {
+    const refreshBtn = document.getElementById("others-refresh-btn");
+    if (!refreshBtn) return;
+
+    refreshBtn.addEventListener("click", () => {
+      // 置空内容，显示加载状态
+      contentElement.innerHTML = `
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 20px; color: #808080;">
+          <div class="loading-spinner" style="width: 30px; height: 30px; border: 3px solid #e0e0e0; border-top-color: #000080; border-radius: 50%; animation: spin 1s linear infinite; margin-bottom: 10px;"></div>
+          <span>Refreshing...</span>
+        </div>
+      `;
+
+      // 随机延迟 0.5-1.5秒
+      const delay = 500 + Math.random() * 1000;
+
+      setTimeout(() => {
+        // 10% 概率加载失败
+        const isError = Math.random() < 0.1;
+
+        if (isError) {
+          // 显示 404 错误（删除刷新功能，只显示错误）
+          contentElement.innerHTML = `
+            <div style="display: flex; flex-direction: column; align-items: center; padding: 40px 20px; color: #808080;">
+              <div style="font-size: 48px; margin-bottom: 15px;">⚠️</div>
+              <div style="font-size: 18px; color: #ff0000; margin-bottom: 10px;">404 Not Found</div>
+              <div style="font-size: 14px;">The requested page was not found.</div>
+            </div>
+          `;
+        } else {
+          // 正常加载
+          contentElement.innerHTML = "";
+          items.forEach(item => contentElement.appendChild(this.createBrowserLink(item)));
+        }
+      }, delay);
+    });
   },
 
   createFaviconItem(item) {

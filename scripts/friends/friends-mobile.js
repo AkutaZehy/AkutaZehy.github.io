@@ -129,13 +129,13 @@ const MobileManager = {
     addressBar.innerHTML = `
       <div class="browser-address-bar">file://usr/documents/friends/other_pages/</div>
       <div class="browser-controls">
-        <div class="browser-button">Refresh</div>
+        <div class="browser-button" id="mobile-others-refresh-btn">Refresh</div>
       </div>
     `;
 
     const content = document.createElement("div");
     content.className = "browser-content";
-
+    content.id = "mobile-others-content";
     items.forEach(item => {
       const linkContainer = document.createElement("div");
       linkContainer.className = "browser-link-container";
@@ -168,5 +168,58 @@ const MobileManager = {
 
     container.appendChild(addressBar);
     container.appendChild(content);
+
+    // 添加刷新功能
+    this.initMobileRefresh(content, items);
+  },
+
+  initMobileRefresh(contentElement, items) {
+    const refreshBtn = document.getElementById("mobile-others-refresh-btn");
+    if (!refreshBtn) return;
+
+    refreshBtn.addEventListener("click", () => {
+      // 置空内容，显示加载状态
+      contentElement.innerHTML = `
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 20px; color: #808080;">
+          <div class="loading-spinner" style="width: 30px; height: 30px; border: 3px solid #e0e0e0; border-top-color: #000080; border-radius: 50%; animation: spin 1s linear infinite; margin-bottom: 10px;"></div>
+          <span>Refreshing...</span>
+        </div>
+      `;
+
+      // 随机延迟 0.5-1.5秒
+      const delay = 500 + Math.random() * 1000;
+
+      setTimeout(() => {
+        // 10% 概率加载失败
+        const isError = Math.random() < 0.1;
+
+        if (isError) {
+          // 显示 404 错误
+          contentElement.innerHTML = `
+            <div style="display: flex; flex-direction: column; align-items: center; padding: 40px 20px; color: #808080;">
+              <div style="font-size: 48px; margin-bottom: 15px;">⚠️</div>
+              <div style="font-size: 18px; color: #ff0000; margin-bottom: 10px;">404 Not Found</div>
+              <div style="font-size: 14px;">The requested page was not found.</div>
+            </div>
+          `;
+        } else {
+          // 正常加载
+          contentElement.innerHTML = "";
+          items.forEach(item => {
+            const linkContainer = document.createElement("div");
+            linkContainer.className = "browser-link-container";
+
+            const link = document.createElement("a");
+            link.className = "browser-link";
+            link.href = item.url;
+            link.target = "_blank";
+            link.textContent = item.name;
+
+            linkContainer.appendChild(link);
+            contentElement.appendChild(linkContainer);
+          });
+        }
+      }, delay);
+    });
   }
 };
