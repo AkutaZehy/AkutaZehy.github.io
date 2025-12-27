@@ -46,11 +46,11 @@
   },
   {
     "type": "friends",
-    "hasFavicon": false,
+    "hasFavicon": true,
     "isOneWay": false,
-    "image": "",
+    "image": "/resources/favicons/bablfishes.png",
     "description": "",
-    "name": "Cosmo / bablfishes",
+    "name": "bablfishes / Cosmo",
     "url": "https://bablfishes.nekoweb.org/"
   },
   {
