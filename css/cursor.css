@@ -1,68 +1,68 @@
 body {
   cursor:
-    url("http://img.akutazehy.xyz/home/cursor/01-normal-select.png"), auto;
+    url("https://img.akutazehy.xyz/home/cursor/01-normal-select.png"), auto;
 }
 
 .text-hover {
-  cursor: url("http://img.akutazehy.xyz/home/cursor/06-text-select.png"), text;
+  cursor: url("https://img.akutazehy.xyz/home/cursor/06-text-select.png"), text;
 }
 
 a {
   cursor:
-    url("http://img.akutazehy.xyz/home/cursor/15-link-select.png"), pointer;
+    url("https://img.akutazehy.xyz/home/cursor/15-link-select.png"), pointer;
 }
 
 .help {
-  cursor: url("http://img.akutazehy.xyz/home/cursor/02-help-select.png"), help;
+  cursor: url("https://img.akutazehy.xyz/home/cursor/02-help-select.png"), help;
 }
 
 .wait {
-  cursor: url("http://img.akutazehy.xyz/home/cursor/04-busy.png"), wait;
+  cursor: url("https://img.akutazehy.xyz/home/cursor/04-busy.png"), wait;
 }
 
 .crosshair {
   cursor:
-    url("http://img.akutazehy.xyz/home/cursor/05-precision-select.png"),
+    url("https://img.akutazehy.xyz/home/cursor/05-precision-select.png"),
     crosshair;
 }
 
 /* .text {
-  cursor: url("http://img.akutazehy.xyz/home/cursor/06-text-select.png"), text;
+  cursor: url("https://img.akutazehy.xyz/home/cursor/06-text-select.png"), text;
 } */
 
 .handwriting {
-  cursor: url("http://img.akutazehy.xyz/home/cursor/07-handwriting.png"), text;
+  cursor: url("https://img.akutazehy.xyz/home/cursor/07-handwriting.png"), text;
 }
 
 .not-allowed {
   cursor:
-    url("http://img.akutazehy.xyz/home/cursor/08-unavailable.png"), not-allowed;
+    url("https://img.akutazehy.xyz/home/cursor/08-unavailable.png"), not-allowed;
 }
 
 .ns-resize {
   cursor:
-    url("http://img.akutazehy.xyz/home/cursor/09-vertical-resize.png"),
+    url("https://img.akutazehy.xyz/home/cursor/09-vertical-resize.png"),
     ns-resize;
 }
 
 .ew-resize {
   cursor:
-    url("http://img.akutazehy.xyz/home/cursor/10-horizontal-resize.png"),
+    url("https://img.akutazehy.xyz/home/cursor/10-horizontal-resize.png"),
     ew-resize;
 }
 
 .nwse-resize {
   cursor:
-    url("http://img.akutazehy.xyz/home/cursor/11-diagonal-resize-1.png"),
+    url("https://img.akutazehy.xyz/home/cursor/11-diagonal-resize-1.png"),
     nwse-resize;
 }
 
 .nesw-resize {
   cursor:
-    url("http://img.akutazehy.xyz/home/cursor/12-diagonal-resize-2.png"),
+    url("https://img.akutazehy.xyz/home/cursor/12-diagonal-resize-2.png"),
     nesw-resize;
 }
 
 .move {
-  cursor: url("http://img.akutazehy.xyz/home/cursor/13-move.png"), move;
+  cursor: url("https://img.akutazehy.xyz/home/cursor/13-move.png"), move;
 }
