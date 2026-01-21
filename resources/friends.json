@@ -3,7 +3,7 @@
     "type": "friends",
     "hasFavicon": true,
     "isOneWay": false,
-    "image": "/resources/favicons/lachrymal.gif",
+    "image": "https://img.akutazehy.xyz/home/favicons/lachrymal.gif",
     "description": "",
     "name": "Lachrymal",
     "url": "https://lachrymal.net/"
