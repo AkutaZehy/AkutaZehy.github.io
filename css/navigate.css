@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'Mushin';
-  src: url('/resources/fonts/LXGWMarkerGothic-Regular.ttf') format('truetype');
+  font-family: "Mushin";
+  src: url("http://assets.akutazehy.xyz/fonts/LXGWMarkerGothic-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Higashi';
-  src: url('/resources/fonts/HigashiOme-Gothic-1.3i.ttf') format('truetype');
+  font-family: "Higashi";
+  src: url("http://assets.akutazehy.xyz/fonts/HigashiOme-Gothic-1.3i.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Ark Pixel';
-  src: url('/resources/fonts/ark-pixel-12px-proportional-zh_cn.otf') format('opentype');
+  font-family: "Ark Pixel";
+  src: url("http://assets.akutazehy.xyz/fonts/ark-pixel-12px-proportional-zh_cn.otf") format("opentype");
 }
 
 body {
@@ -19,7 +19,7 @@ body {
   height: 100vh;
   background-color: #111;
   color: #fff;
-  font-family: 'Ark Pixel', Courier, monospace;
+  font-family: "Ark Pixel", Courier, monospace;
   overflow: hidden;
 }
 
@@ -58,7 +58,9 @@ svg {
 .person,
 .person-body {
   opacity: 0;
-  transition: opacity 1s, transform 1s;
+  transition:
+    opacity 1s,
+    transform 1s;
 }
 
 .bottom-section {
@@ -89,7 +91,7 @@ svg {
   font-size: 2em;
   text-align: center;
   white-space: nowrap;
-  font-family: 'Ark Pixel', 'Mushin', 'Courier New', Courier, monospace;
+  font-family: "Ark Pixel", "Mushin", "Courier New", Courier, monospace;
   font-size: 5em;
 }
 
@@ -102,7 +104,7 @@ svg {
   text-align: center;
   opacity: 0.8;
   white-space: nowrap;
-  font-family: 'Ark Pixel', 'Higashi', 'Courier New', Courier, monospace;
+  font-family: "Ark Pixel", "Higashi", "Courier New", Courier, monospace;
 }
 
 .area {
@@ -154,7 +156,6 @@ svg {
 }
 
 @keyframes runEscape {
-
   0% {
     opacity: 0;
     transform: translateX(0);

@@ -2,22 +2,22 @@
 
 @font-face {
   font-family: 'Higashi';
-  src: url('/resources/fonts/HigashiOme-Gothic-1.3i.ttf') format('truetype');
+  src: url('http://assets.akutazehy.xyz/fonts/HigashiOme-Gothic-1.3i.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'OPPOSans';
-  src: url('/resources/fonts/OPPOSans-Regular.ttf') format('truetype');
+  src: url('http://assets.akutazehy.xyz/fonts/OPPOSans-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'SF Mono';
-  src: url('/resources/fonts/SFMono-Regular-10.otf') format('opentype');
+  src: url('http://assets.akutazehy.xyz/fonts/SFMono-Regular-10.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Ark Pixel';
-  src: url('/resources/fonts/ark-pixel-12px-proportional-zh_cn.otf') format('opentype');
+  src: url('http://assets.akutazehy.xyz/fonts/ark-pixel-12px-proportional-zh_cn.otf') format('opentype');
 }
 
 body {

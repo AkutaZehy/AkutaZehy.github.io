@@ -12,7 +12,7 @@
     "type": "friends",
     "hasFavicon": false,
     "isOneWay": false,
-    "image": "/resources/favicons/aira.png",
+    "image": "http://img.akutazehy.xyz/home/favicons/aira.png",
     "description": "",
     "name": "Aira",
     "url": "https://aira.cafe/"
@@ -21,7 +21,7 @@
     "type": "friends",
     "hasFavicon": true,
     "isOneWay": false,
-    "image": "/resources/favicons/alivemaster.png",
+    "image": "http://img.akutazehy.xyz/home/favicons/alivemaster.png",
     "description": "A resource site.",
     "name": "alivemaster",
     "url": "https://yasunaori.be/"
@@ -48,7 +48,7 @@
     "type": "friends",
     "hasFavicon": true,
     "isOneWay": false,
-    "image": "/resources/favicons/bablfishes.png",
+    "image": "http://img.akutazehy.xyz/home/favicons/bablfishes.png",
     "description": "",
     "name": "bablfishes / Cosmo",
     "url": "https://bablfishes.nekoweb.org/"
@@ -66,7 +66,7 @@
     "type": "friends",
     "hasFavicon": false,
     "isOneWay": false,
-    "image": "/resources/favicons/megakite.png",
+    "image": "http://img.akutazehy.xyz/home/favicons/megakite.png",
     "description": "",
     "name": "megakite",
     "url": "https://megakite.icu/"
@@ -84,7 +84,7 @@
     "type": "friends",
     "hasFavicon": false,
     "isOneWay": false,
-    "image": "/resources/favicons/wzq02.png",
+    "image": "http://img.akutazehy.xyz/home/favicons/wzq02.png",
     "description": "",
     "name": "WZQ02",
     "url": "https://wzq02.top/"
@@ -102,7 +102,7 @@
     "type": "friends",
     "hasFavicon": true,
     "isOneWay": false,
-    "image": "/resources/favicons/kapu.gif",
+    "image": "http://img.akutazehy.xyz/home/favicons/kapu.gif",
     "description": "",
     "name": "Kapunium",
     "url": "https://kapu.nekoweb.org/"
@@ -111,7 +111,7 @@
     "type": "friends",
     "hasFavicon": true,
     "isOneWay": false,
-    "image": "/resources/favicons/akutazehy.png",
+    "image": "http://img.akutazehy.xyz/home/favicons/akutazehy.png",
     "description": "ME",
     "name": "AkutaZehy",
     "url": "https://akutazehy.github.io/"
@@ -129,7 +129,7 @@
     "type": "friends",
     "hasFavicon": false,
     "isOneWay": true,
-    "image": "/resources/favicons/xxhyz.png",
+    "image": "http://img.akutazehy.xyz/home/favicons/xxhyz.png",
     "description": "",
     "name": "XXHYZ",
     "url": "https://xxhyz.net/"
