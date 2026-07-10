@@ -30,7 +30,7 @@
     "type": "friends",
     "hasFavicon": false,
     "isOneWay": false,
-    "image": "",
+    "image": "https://avatars.githubusercontent.com/u/33394391",
     "description": "",
     "name": "hakadao",
     "url": "https://hakadao.cc"
@@ -43,6 +43,15 @@
     "description": "",
     "name": "peppersalt",
     "url": "https://peppersalt.neocities.org/"
+  },
+  {
+    "type": "friends",
+    "hasFavicon": false,
+    "isOneWay": false,
+    "image": "https://a.ppy.sh/24038353?1783661629.png",
+    "description": "",
+    "name": "WLlk",
+    "url": "https://space.bilibili.com/419035379"
   },
   {
     "type": "friends",
@@ -93,7 +102,7 @@
     "type": "friends",
     "hasFavicon": false,
     "isOneWay": false,
-    "image": "",
+    "image": "https://korin.im/avatar.jpg",
     "description": "",
     "name": "KumaKorin",
     "url": "https://korin.im/"
@@ -120,15 +129,6 @@
     "type": "friends",
     "hasFavicon": false,
     "isOneWay": true,
-    "image": "",
-    "description": "",
-    "name": "Lil Hyvää",
-    "url": "https://potofu.me/lilhyvaa"
-  },
-  {
-    "type": "friends",
-    "hasFavicon": false,
-    "isOneWay": true,
     "image": "https://img.akutazehy.xyz/home/favicons/xxhyz.png",
     "description": "",
     "name": "XXHYZ",
@@ -138,7 +138,7 @@
     "type": "friends",
     "hasFavicon": false,
     "isOneWay": true,
-    "image": "",
+    "image": "https://pbs.twimg.com/profile_images/2036382989870047235/QeoxQXQZ_400x400.jpg",
     "description": "",
     "name": "中絲悠",
     "url": "https://yunakaito.com/"
