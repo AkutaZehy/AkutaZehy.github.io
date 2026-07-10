@@ -122,14 +122,15 @@
     <script>
       const calculate = document.getElementById("what");
 
-      var currentDate = new Date();
-      var targetDate = new Date("2018-01-01");
-      var yearsAgo = Math.floor(
+      const currentDate = new Date();
+      const targetDate = new Date("2018-01-01");
+      const yearsAgo = Math.floor(
         (currentDate - targetDate) / (1000 * 60 * 60 * 24 * 365)
       );
       calculate.innerHTML = `<p>Holy so year 2018 was ${yearsAgo} yrs ago.</p>`;
     </script>
 
     <script src="/scripts/cursor-listener.js"></script>
+    <script src="/scripts/ascii-fish-school.js"></script>
   </body>
 </html>
